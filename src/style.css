@@ -38,7 +38,7 @@ body {
     height: 100%;
     width: 100%;
     
-    background-image: url("../imgs/estrelas.png");
+    background-image: url("imgs/estrelas.png");
     background-repeat: repeat-y;
     background-position: center;
     background-size: 100%;
@@ -56,7 +56,7 @@ header {
 /* Ajustes da Imagem de Fundo */
 header::before {
         content: "";
-        background-image: url("../imgs/Button.png");
+        background-image: url("imgs/Button.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 210% 100%;
