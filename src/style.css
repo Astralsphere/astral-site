@@ -51,12 +51,21 @@ header {
     height: 10vh;
     display: flex;
     color: white;
+}
 
-    background-image: url("../imgs/Button.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.6;
+header::before {
+        content: "";
+        background-image: url("../imgs/Button.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 210% 100%;
+
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.6;
 }
 
 header ul {
@@ -64,16 +73,13 @@ header ul {
 }
 
 .navbar {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 40px;
     text-align: center;
     height: 100%;
-}
-
-.navbar ul {
-    opacity: 1;
 }
 
 .navbar li {
