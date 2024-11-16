@@ -4,6 +4,6 @@ $(document).ready(function () {
   });
 
   $("a").hover(function () {
-    $(this).addClass("animated");
+    $(this).addClass("animated"); 
   });
 });
