@@ -98,13 +98,14 @@ header ul {
     border-right: none;
 }
 
-/* Main */
+/* Main - Logo */
 .logo {
     width: 100%;
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .logo img {
@@ -121,6 +122,30 @@ header ul {
     align-self:center;
     left: 28%;
     animation: blink 3s infinite;
+}
+
+/* Trailer */
+trailer {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    border: 4px solid rgb(0, 255, 221);
+    box-shadow: 0 0 15px rgb(0, 255, 221);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Animações */
@@ -155,9 +180,21 @@ header ul {
 
 /* Responsividade (Mobile)*/
 @media screen and (max-width: 768px) {
+    .logo img {
+        width: 80%;
+        padding-top: 0px;
+        margin-bottom: 5vh;
+    }
+    
     .effect {
         overflow: hidden;
         opacity: 0;
         animation: none;
+    }
+
+    .video {
+        width: 80%;
+        height: 80%;
+        margin-bottom: 20vh;
     }
 }
