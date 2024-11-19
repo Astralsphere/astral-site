@@ -112,6 +112,17 @@ header ul {
     cursor: pointer;
 }
 
+.effect {
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    align-self:center;
+    left: 28%;
+    animation: blink 3s infinite;
+}
+
 /* Animações */
 @keyframes link {
     from {
@@ -124,5 +135,29 @@ header ul {
 
     to {
         transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.1;
+        box-shadow: 0 0 20px rgb(148, 148, 148), 0 0 25px rgb(148, 148, 148), 0 0 30px rgb(148, 148, 148);
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    to {
+        opacity: 0.1;
+        box-shadow: 0 0 20px rgb(148, 148, 148), 0 0 25px rgb(148, 148, 148), 0 0 30px rgb(148, 148, 148);
+    }
+}
+
+/* Responsividade (Mobile)*/
+@media screen and (max-width: 768px) {
+    .effect {
+        overflow: hidden;
+        opacity: 0;
+        animation: none;
     }
 }
