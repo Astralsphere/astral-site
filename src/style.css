@@ -67,18 +67,18 @@ header {
 
 /* Ajustes da Imagem de Fundo */
 header::before {
-        content: "";
-        background-image: url("../imgs/Button.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 210% 100%;
+    content: "";
+    background-image: url("../imgs/Button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 100%;
 
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.6;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
 }
 
 header ul {
@@ -155,6 +155,7 @@ main{
     border-radius: 20px;
     border: 2px double rgb(0, 255, 221);
     box-shadow: 0 0 20px rgb(0, 255, 221);
+
     animation: glow 3s infinite;
     color: rgb(0, 255, 221);
 
@@ -174,9 +175,9 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     padding: 25vh;
     padding-top: 0;
-
     text-align: center;
 }
 
@@ -185,7 +186,7 @@ main{
     font-size: 3em;
 }
 
-.campanha > span {
+.campanha span {
     padding-top: 7vh;
 }
 
@@ -203,11 +204,13 @@ main{
 .imgCamp img {
     width: 80%;
     height: auto;
+
     border-radius: 20px;
     border: solid 2px rgba(255, 255, 255, 0.158);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.253);
     animation: glow 3s infinite;
     color: rgba(255, 255, 255, 0.253);
+
     transform: scale(1);
     transition: transform 0.5s ease;
 }
@@ -217,6 +220,10 @@ main{
     height: 20vh;
     display: flex;
     justify-content: center;
+}
+
+.btn p {
+    font-size: 1.5em;
 }
 
 #btnCamp {
@@ -237,12 +244,26 @@ main{
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.500);
     animation: glow 3s infinite;
     color: rgba(255, 0, 0, 0.500);
+
     transform: scale(1);
     transition: transform 0.5s ease;
 }
 
 #btnCamp:hover, .imgCamp img:hover {
     transform: scale(1.05);
+}
+
+/* Redes Sociais */
+.social {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Animações */
