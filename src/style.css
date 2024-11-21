@@ -266,6 +266,22 @@ main{
     flex-direction: row;
 }
 
+.redes a {
+    padding-right: 2vh;
+}
+
+.social a.animated {
+    transition: transform 0.5s ease;
+    animation: none;
+    transform: scale(1);
+}
+
+.social a:hover {
+    transition: transform 0.5s ease;
+    animation: none;
+    transform: scale(1.2);
+}
+
 /* Animações */
 @keyframes link {
     from {
@@ -367,5 +383,20 @@ main{
 
     .campanha p{
         font-size: 0.85em;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .social a{
+        padding-right: 0px;
+        animation: none;
+    }
+
+    .redes {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
