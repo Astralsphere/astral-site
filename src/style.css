@@ -314,6 +314,20 @@ main{
     box-shadow: 0 0 20px rgb(31, 31, 75);
     animation: glow 3s infinite;
     color: rgb(31, 31, 75);
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#Plyun.animated {
+    animation: none;
+    transform: scale(1);
+}
+
+#Plyun:hover {
+    transition: transform 0.5s ease;
+    animation: none;
+    transform: scale(1.1);
 }
 
 .jogoTxt {
