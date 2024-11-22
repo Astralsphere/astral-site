@@ -45,8 +45,7 @@ body {
     line-height: 1.6;
     font-size: 1em;
 
-    min-height: 300vh;
-    height: 100%;
+    min-height: 500vh;
     width: 100%;
     
     background-image: url("../imgs/estrelas.png");
@@ -169,13 +168,10 @@ main{
 
 /* Campanha */
 .campanha {
-    width: 100%;
-    height: 45vh;
-    
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%;
+    height: fit-content;
     padding: 25vh;
     padding-top: 0;
     text-align: center;
@@ -261,6 +257,18 @@ main{
     align-items: center;
 }
 
+.social a.animated {
+    transition: transform 0.6s ease;
+    animation: none;
+    transform: scale(1);
+}
+
+.social a:hover {
+    transition: transform 0.6s ease;
+    animation: none;
+    transform: scale(1.2);
+}
+
 .redes {
     display: flex;
     flex-direction: row;
@@ -270,16 +278,51 @@ main{
     padding-right: 2vh;
 }
 
-.social a.animated {
-    transition: transform 0.5s ease;
-    animation: none;
-    transform: scale(1);
+/* Sobre o Jogo */
+.sobre {
+    width: 100%;
+    padding: 5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
 }
 
-.social a:hover {
-    transition: transform 0.5s ease;
-    animation: none;
-    transform: scale(1.2);
+.jogo {
+    width: 40%;
+    padding: 0vh 2vh;
+}
+
+.jogo img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: solid 2px rgba(31, 31, 75, 0.5);
+    box-shadow: 0 0 20px rgb(31, 31, 75);
+    animation: glow 3s infinite;
+    color: rgb(31, 31, 75);
+}
+
+.jogoTxt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0vh 2vh;
+
+    font-size: 0.8em;
+}
+
+.jogoTxt h1{
+    font-size: 3em;
+}
+
+.jogoTxt h1, .jogoTxt p {
+    padding-bottom: 5vh;
 }
 
 /* Animações */
@@ -374,7 +417,6 @@ main{
     .campanha {
         padding: 3vh;
         padding-top: 0px;
-        height: 35vh;
     }
 
     .campanha h2 {
@@ -398,5 +440,13 @@ main{
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .jogo, .jogoTxt {
+        width: 100%;
     }
 }
