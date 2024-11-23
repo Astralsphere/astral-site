@@ -10,7 +10,6 @@ const dictionary = {
         'header-imagens': 'Screenshots',
         'header-faq': 'Any question? Ask us!',
         'header-freq-faq': 'FAQ',
-        'text-sobre': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus vestibulum volutpat. Nam varius, risus at aliquet faucibus, quam diam facilisis est, quis euismod massa lacus et orci. Cras sagittis, tortor id luctus scelerisque, mi magna posuere sapien, sit amet sollicitudin dui dui sed urna. Mauris ultrices commodo nibh, ut tincidunt orci facilisis ut. Phasellus imperdiet sem at mauris congue finibus. Suspendisse viverra maximus leo, nec congue augue fringilla ac. Duis sem neque, sagittis a tellus sit amet, facilisis lobortis leo. Aliquam orci ex, convallis id sem nec, vulputate interdum mi. Nam interdum nibh id cursus elementum. Ut ut purus et mi varius lacinia. Donec congue sed orci at imperdiet. In elementum, velit in volutpat iaculis, ipsum mauris ornare quam, viverra rhoncus purus ante vel nibh. Aliquam dictum suscipit elementum.',
     },
     'pt-br': {
         'title-sobre': 'Início',
@@ -23,7 +22,11 @@ const dictionary = {
         'header-imagens': 'Screenshots',
         'header-faq': 'Alguma duvida? Pode nos Perguntar!',
         'header-freq-faq': 'Perguntas frequentes',
-        'text-sobre': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus vestibulum volutpat. Nam varius, risus at aliquet faucibus, quam diam facilisis est, quis euismod massa lacus et orci. Cras sagittis, tortor id luctus scelerisque, mi magna posuere sapien, sit amet sollicitudin dui dui sed urna. Mauris ultrices commodo nibh, ut tincidunt orci facilisis ut. Phasellus imperdiet sem at mauris congue finibus. Suspendisse viverra maximus leo, nec congue augue fringilla ac. Duis sem neque, sagittis a tellus sit amet, facilisis lobortis leo. Aliquam orci ex, convallis id sem nec, vulputate interdum mi. Nam interdum nibh id cursus elementum. Ut ut purus et mi varius lacinia. Donec congue sed orci at imperdiet. In elementum, velit in volutpat iaculis, ipsum mauris ornare quam, viverra rhoncus purus ante vel nibh. Aliquam dictum suscipit elementum.',
+        'text-camp': 'Entre nessa aventura como Plyun, um adorável ser de energia, e comece sua jornada para descobrir mais sobre o universo e si mesmo!',
+        'text-social': 'Seja notificado sobre novidades seguindo nossas redes sociais!',
+        'text-sobre-1' : 'Astral Adventure é o um jogo indie brasileiro em desenvolvimento, que mistura SHMUP (ou jogos de nave) com elementos de jogos de plataforma.',
+        'text-sobre-2' : 'Desenvolvido pelo time independente Astralsphere Games, o jogo conta com visual pixel art 32 bit, jogabilidade arcade e músicas envolventes!',
+        'btn-access-camp': 'Acessar Campanha',
     },
 };
 
