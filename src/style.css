@@ -1,8 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/sf-intermosaic');
 
+:root {
+    --main-color: rgba(0, 255, 221, 1);
+    --default-font: 'SF Intermosaic', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 16px;
 }
   
 * {
@@ -32,12 +38,19 @@ a:hover {
     animation: link 2s infinite;
 }
 
+p {
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--default-font);
+}
+
 body {
-    font-family: 'SF Intermosaic', sans-serif;
+    font-family: var(--default-font);
     color: white;
     line-height: 1.6;
-    min-height: 200vh;
-    height: 100%;
+    font-size: 1em;
+
+    min-height: 500vh;
     width: 100%;
     
     background-image: url("../imgs/estrelas.png");
@@ -53,22 +66,30 @@ header {
     height: 11vh;
     display: flex;
     color: white;
+    z-index: 10;
 }
 
 /* Ajustes da Imagem de Fundo */
 header::before {
-        content: "";
-        background-image: url("../imgs/Button.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 210% 100%;
+    content: "";
+    /* background-image: url("../imgs/Button.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 100%; */
+    border-top: 6px double var(--main-color);
+    border-bottom: 6px double var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    animation: glow 3s infinite;
+    color: var(--main-color);
 
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.6;
+    background-color: black;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
 }
 
 header ul {
@@ -91,25 +112,237 @@ header ul {
     transform: scale(1);
     
     border-right: 2px solid white;
-    z-index: 10;
 }
 
 .navbar li:last-child {
     border-right: none;
 }
 
-/* Main */
+/* Main - Logo */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .logo {
     width: 100%;
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10vh;
 }
 
 .logo img {
     width: 50%;
+}
+
+.effect {
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    align-self:center;
+    left: 28%;
+    animation: blink 3s infinite;
+}
+
+/* Trailer */
+.trailer {
+    width: 100%;
+    height: 40vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 45%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px double var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+
+    animation: glow 3s infinite;
+    color: var(--main-color);
+
+    background-color: black;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Campanha */
+.campanha {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 25vh;
+    padding-top: 0;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.campanha h2 {
+    padding-bottom: 3vh;
+    font-size: 3em;
+}
+
+.campanha span {
+    padding-top: 7vh;
+}
+
+.sinopse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgCamp {
+    width: 100%;
+}
+
+.imgCamp img {
+    width: 80%;
+    height: auto;
+
+    border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0.158);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.253);
+    animation: glow 3s infinite;
+    color: rgba(255, 255, 255, 0.253);
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.btn {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn p {
+    font-size: 1.5em;
+}
+
+#btnCamp {
+    background-image: url('../imgs/campButton.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    cursor: pointer;
+
+    text-align: center;
+    align-items: center;
+
+    width: 50vh;
+    height: 12vh;
+
+    border-radius: 10px;
+    border: double 2px rgba(255, 0, 0, 0.500);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.500);
+    animation: glow 3s infinite;
+    color: rgba(255, 0, 0, 0.500);
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#btnCamp:hover, .imgCamp img:hover {
+    transform: scale(1.05);
+}
+
+/* Redes Sociais */
+.social {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.social a.animated {
+    transition: transform 0.6s ease;
+    animation: none;
+    transform: scale(1);
+}
+
+.social a:hover {
+    transition: transform 0.6s ease;
+    animation: none;
+    transform: scale(1.2);
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a {
+    padding-right: 2vh;
+}
+
+/* Sobre o Jogo */
+.sobre {
+    width: 100%;
+    padding: 5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+.jogo {
+    width: 40%;
+    padding: 0vh 3vh;
+}
+
+.jogo img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: solid 2px rgba(31, 31, 75, 0.5);
+    box-shadow: 0 0 20px rgb(31, 31, 75);
+    animation: glow 3s infinite;
+    color: rgb(31, 31, 75);
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#Plyun:hover {
+    transition: transform 0.5s ease;
+    animation: none;
+    transform: scale(1.1);
+}
+
+.jogoTxt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0vh 5vh;
+
+    font-size: 0.8em;
+}
+
+.jogoTxt h1{
+    font-size: 3em;
+}
+
+.jogoTxt h1, .jogoTxt p {
+    padding-bottom: 5vh;
 }
 
 /* Animações */
@@ -124,5 +357,124 @@ header ul {
 
     to {
         transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.1;
+        box-shadow: 0 0 20px rgb(148, 148, 148), 0 0 25px rgb(148, 148, 148), 0 0 30px rgb(148, 148, 148);
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    to {
+        opacity: 0.1;
+        box-shadow: 0 0 20px rgb(148, 148, 148), 0 0 25px rgb(148, 148, 148), 0 0 30px rgb(148, 148, 148);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px currentColor;
+    }
+    50% {
+        box-shadow: 0 0 10px currentColor;
+    }
+    to {
+        box-shadow: 0 0 20px currentColor;
+    }
+}
+
+/* Responsividade (Mobile)*/
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+
+    header {
+        height: 10vh;
+        justify-content: left;
+    }
+
+    .navbar{
+        transform: scale(0.6);
+
+        width: 10%;
+        padding-left: 0px;
+    }
+
+    .logo {
+        height: 35vh;
+        margin-top: 3vh;
+    }
+
+    .logo img {
+        width: 100%;
+        padding-top: 0px;
+        margin-bottom: 5vh;
+        padding: 5px 20px;
+    }
+    
+    .effect {
+        overflow: hidden;
+        opacity: 0;
+        animation: none;
+    }
+
+    .trailer {
+        height: 35vh;
+    }
+
+    .video {
+        width: 75%;
+        height: 80%;
+    }
+
+    .campanha {
+        padding: 3vh;
+        padding-top: 0px;
+        padding-bottom: 8vh;
+    }
+
+    .campanha h2 {
+        font-size: 2.3rem;
+    }
+
+    .campanha p{
+        font-size: 0.85em;
+    }
+
+    .imgCamp img {
+        width: 100%;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .social a{
+        padding-right: 0px;
+        animation: none;
+    }
+
+    .social img {
+        width: 80%;
+    }
+
+    .redes {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .jogo, .jogoTxt {
+        width: 100%;
     }
 }
