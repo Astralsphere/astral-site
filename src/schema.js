@@ -4,7 +4,7 @@ const schemaData = {
   "name": "Astral Adventure",
   "description": "Astral Adventure é um jogo indie brasileiro em desenvolvimento, que mistura SHMUP (ou jogos de nave) com elementos de jogos de plataforma.",
   "image": "imgs\astral.ico", 
-  "url": "astraladventure.com",
+  "url": "https://astralsphere.github.io/astral-site/",
   "genre": "SHMUP, Plataforma",
   "publisher": {
     "@type": "Organization",
