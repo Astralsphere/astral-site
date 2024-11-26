@@ -78,7 +78,6 @@ header::before {
     background-size: 210% 100%; */
     border-top: 6px double var(--main-color);
     border-bottom: 6px double var(--main-color);
-    box-shadow: 0 0 20px var(--main-color);
     animation: glow 3s infinite;
     color: var(--main-color);
 
@@ -164,7 +163,6 @@ main{
     height: 100%;
     border-radius: 20px;
     border: 2px double var(--main-color);
-    box-shadow: 0 0 20px var(--main-color);
 
     animation: glow 3s infinite;
     color: var(--main-color);
@@ -214,7 +212,6 @@ main{
 
     border-radius: 20px;
     border: solid 2px rgba(255, 255, 255, 0.158);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.253);
     animation: glow 3s infinite;
     color: rgba(255, 255, 255, 0.253);
 
@@ -248,7 +245,6 @@ main{
 
     border-radius: 10px;
     border: double 2px rgba(255, 0, 0, 0.500);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.500);
     animation: glow 3s infinite;
     color: rgba(255, 0, 0, 0.500);
 
@@ -312,7 +308,6 @@ main{
     max-width: 100%;
     border-radius: 20px;
     border: solid 2px rgba(31, 31, 75, 0.5);
-    box-shadow: 0 0 20px rgb(31, 31, 75);
     animation: glow 3s infinite;
     color: rgb(31, 31, 75);
 
@@ -358,16 +353,7 @@ main{
     align-items: center;
     text-align: center;
     
-    background-color: rgba(0, 0, 0);
-}
-
-.print {
-    display: block;
-    width: 30%;
-    height: 20vh;
-    border-radius: 20px;
-    margin: 3vh;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.800);
 }
 
 .fotos-column {
@@ -380,7 +366,23 @@ main{
     padding-top: 3vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.print {
+    width: 50%;
+    height: 50%;
+    margin: 3vh;
+}
+
+.print img {
+    max-width: 75%;
+    max-height: 50%;
+    border-radius: 20px;
+    border: 2px double var(--main-color);
+
+    animation: glow 3s infinite;
+    color: var(--main-color);
 }
 
 /* Animações */
