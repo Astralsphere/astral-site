@@ -222,43 +222,45 @@ main{
 .btn {
     width: 100%;
     height: 20vh;
-    display: flex;
-    justify-content: center;
 }
 
 .btn p {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #btnCamp {
     background-image: url('../imgs/campButton.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;
     background-size: 100% 100%;
     cursor: pointer;
 
     text-align: center;
     align-items: center;
 
-    width: 50vh;
-    height: 12vh;
+    width: 53vh;
+    height: 14vh;
 
-    border-radius: 30px;
-    border: double 2px rgba(255, 0, 0, 0.500);
+    border-radius: 20px;
+    border: none;
     animation: glow 3s infinite;
+    background-color: rgba(255, 0, 0, 0.2);
     color: rgba(255, 0, 0, 0.500);
 
     transform: scale(1);
     transition: transform 0.5s ease;
 }
 
-#btnCamp:hover, .imgCamp img:hover {
-    background-image: url('../imgs/campButtonHover.png');
+.imgCamp img:hover {
     transform: scale(1.05);
 }
 
-#btnCamp:active, .imgCamp img:active {
+#btnCamp:hover {
+    background-image: url('../imgs/campButtonHover.png');
+    transform: scale(1.2);
+}
+
+#btnCamp:active {
     background-image: url('../imgs/campButtonPress.png');
 }
 
