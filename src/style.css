@@ -254,7 +254,7 @@ main{
 }
 
 #btnCamp:hover, .imgCamp img:hover {
-    background-image: url('../imgs/campButtonhover.png');
+    background-image: url('../imgs/campButtonHover.png');
     transform: scale(1.05);
 }
 
