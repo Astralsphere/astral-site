@@ -1,6 +1,6 @@
 const dictionary = {
     'en': {
-        'title-sobre': 'Main',
+        'title-sobre': 'Home',
         'title-camp': 'Campaign',
         'title-social': 'Updates',
         'title-faq': 'FAQ',
