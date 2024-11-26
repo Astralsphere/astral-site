@@ -234,7 +234,8 @@ main{
     background-image: url('../imgs/campButton.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150% 100%;
+    background-color: transparent;
+    background-size: 100% 100%;
     cursor: pointer;
 
     text-align: center;
@@ -243,7 +244,7 @@ main{
     width: 50vh;
     height: 12vh;
 
-    border-radius: 10px;
+    border-radius: 30px;
     border: double 2px rgba(255, 0, 0, 0.500);
     animation: glow 3s infinite;
     color: rgba(255, 0, 0, 0.500);
@@ -253,7 +254,12 @@ main{
 }
 
 #btnCamp:hover, .imgCamp img:hover {
+    background-image: url('../imgs/campButtonhover.png');
     transform: scale(1.05);
+}
+
+#btnCamp:active, .imgCamp img:active {
+    background-image: url('../imgs/campButtonPress.png');
 }
 
 /* Redes Sociais */
@@ -370,13 +376,13 @@ main{
 }
 
 .print {
-    width: 50%;
+    width: 30%;
     height: 50%;
     margin: 3vh;
 }
 
 .print img {
-    max-width: 75%;
+    max-width: 70%;
     max-height: 50%;
     border-radius: 20px;
     border: 2px double var(--main-color);
