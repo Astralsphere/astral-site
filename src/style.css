@@ -44,6 +44,10 @@ p {
     font-family: var(--default-font);
 }
 
+h1{
+    font-size: 3em;
+}
+
 body {
     font-family: var(--default-font);
     color: white;
@@ -272,15 +276,16 @@ main{
     align-items: center;
 }
 
-.social a.animated {
+.social a {
     transition: transform 0.6s ease;
     animation: none;
+}
+
+.social a.animated {
     transform: scale(1);
 }
 
 .social a:hover {
-    transition: transform 0.6s ease;
-    animation: none;
     transform: scale(1.2);
 }
 
@@ -325,7 +330,6 @@ main{
 
 #Plyun:hover {
     transition: transform 0.5s ease;
-    animation: none;
     transform: scale(1.1);
 }
 
@@ -340,17 +344,19 @@ main{
     font-size: 0.8em;
 }
 
-.jogoTxt h1{
-    font-size: 3em;
-}
-
 .jogoTxt h1, .jogoTxt p {
     padding-bottom: 5vh;
+}
+
+.jogoTxt h1 {
+    text-wrap: nowrap;
 }
 
 /* Screenshots */
 .screenshots {
     width: 100%;
+    height: fit-content;
+
     padding: 5vh;
     padding-top: 2vh;
     margin-top: 10vh;
@@ -360,8 +366,6 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    background-color: rgba(0, 0, 0, 0.800);
 }
 
 .fotos-column {
@@ -387,7 +391,7 @@ main{
     max-width: 70%;
     max-height: 50%;
     border-radius: 20px;
-    border: 2px double var(--main-color);
+    border: 10px double var(--main-color);
 
     animation: glow 3s infinite;
     color: var(--main-color);
@@ -442,6 +446,10 @@ main{
         letter-spacing: 0px;
     }
 
+    h1, h2 {
+        font-size: 2.3rem;
+    }
+
     header {
         height: 10vh;
         justify-content: left;
@@ -487,10 +495,6 @@ main{
         padding-bottom: 8vh;
     }
 
-    .campanha h2 {
-        font-size: 2.3rem;
-    }
-
     .campanha p{
         font-size: 0.85em;
     }
@@ -520,9 +524,39 @@ main{
 
     .sobre {
         flex-direction: column;
+        padding: 2vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
     }
 
     .jogo, .jogoTxt {
         width: 100%;
+    }
+
+    .jogo {
+        padding: 2vh;
+    }
+
+    .jogoTxt {
+        padding: 0vh 2vh;
+    }
+
+    .screenshots {
+        padding: 2vh;
+    }
+
+    .fotos-row {
+        padding-top: 2vh;
+    }
+
+    .print {
+        max-width: 100%;
+        height: 50%;
+        margin: 1.2vh;
+    }
+
+    .print img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
