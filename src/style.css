@@ -280,7 +280,7 @@ main{
 }
 
 #btnCamp:hover {
-    background-image: url('../imgs/campButtonHover.png') !important;
+    background-image: url('../imgs/campButtonhover.png') !important;
     transform: scale(1.2);
 }
 
