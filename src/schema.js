@@ -6,10 +6,12 @@ const schemaData = {
   "image": "imgs\astral.ico", 
   "url": "https://astralsphere.github.io/astral-site/",
   "genre": ["SHMUP", "Plataforma", "Aventura", "Indie", "Brasileiro", "Jogo de nave"],
+  "keywords": ["Astral", "Adventure", "Plyun", "Retro"],
   "gameMode": "SinglePlayer",
   "publisher": {
     "@type": "Organization",
-    "name": "Astral Sphere"
+    "name": ["Astral Sphere", "P8G"],
+    "url": "https://p8g.com.br/pt/sobre/"
   },
   "developer": {
   "@type": "Organization",
