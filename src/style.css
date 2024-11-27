@@ -453,6 +453,7 @@ main{
     left: 1%;
     animation: plyun 3s infinite ease-in-out;
     z-index: 1;
+    padding-bottom: 35vh;
 }
 
 .quests-row {
