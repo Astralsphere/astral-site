@@ -61,13 +61,12 @@ body {
     line-height: 1.6;
     font-size: 1em;
 
-    min-height: 500vh;
     width: 100%;
     
-    background-image: url("../imgs/estrelas.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: 100%;
+    background-image: url("../imgs/estrelas.png") !important;
+    background-repeat: repeat-y !important;
+    background-position: center !important;
+    background-size: 100% !important;
 }
 
 header {
@@ -254,10 +253,10 @@ main{
 }
 
 #btnCamp {
-    background-image: url('../imgs/campButton.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url('../imgs/campButton.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
     cursor: pointer;
 
     text-align: center;
@@ -281,12 +280,12 @@ main{
 }
 
 #btnCamp:hover {
-    background-image: url('../imgs/campButtonHover.png');
+    background-image: url('../imgs/campButtonHover.png') !important;
     transform: scale(1.2);
 }
 
 #btnCamp:active {
-    background-image: url('../imgs/campButtonPress.png');
+    background-image: url('../imgs/campButtonPress.png') !important;
 }
 
 /* Redes Sociais */
@@ -453,7 +452,7 @@ main{
     left: 1%;
     animation: plyun 3s infinite ease-in-out;
     z-index: 1;
-    padding-bottom: 35vh;
+    margin-bottom: 35vh;
 }
 
 .quests-row {
@@ -674,6 +673,6 @@ main{
 
     #drink {
         width: 30%;
-        padding-bottom: 50vh;
+        margin-bottom: 50vh;
     }
 }
