@@ -155,6 +155,24 @@ main{
     animation: blink 3s infinite;
 }
 
+.plyun {
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    padding-top: 10vh;
+    transform: scaleX(-1);
+}
+
+#plyun1 {
+    width: 10%;
+    position: absolute;
+    display: block;
+    left: 2%;
+    animation: plyun 3s infinite reverse ease-in-out;
+    z-index: 1;
+}
+
 /* Trailer */
 .trailer {
     width: 100%;
@@ -424,7 +442,7 @@ main{
     position: absolute;
     display: block;
     left: 1%;
-    animation: plyun 2s infinite;
+    animation: plyun 3s infinite ease-in-out;
     z-index: 1;
 }
 
@@ -492,7 +510,7 @@ main{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
     to {
         transform: translateY(0);
