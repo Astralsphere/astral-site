@@ -64,6 +64,7 @@ body {
     width: 100%;
     
     background-image: url("../imgs/estrelas.png") !important;
+    background-color: #15144B;
     background-repeat: repeat-y !important;
     background-position: center !important;
     background-size: 100% !important;
