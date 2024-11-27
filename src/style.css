@@ -51,6 +51,7 @@ p {
 
 h1{
     font-size: 3em;
+    text-transform:uppercase;
 }
 
 body {
@@ -113,6 +114,7 @@ header ul {
 .navbar li {
     padding: 0px 25px;
     font-size: 1.3em;
+    text-transform: uppercase;
     transform: scale(1);
     
     border-right: 2px solid white;
@@ -192,9 +194,8 @@ main{
     text-align: center;
 }
 
-.campanha h2 {
+.campanha h1 {
     padding-bottom: 3vh;
-    font-size: 3em;
 }
 
 .campanha span {
@@ -231,6 +232,8 @@ main{
 
 .btn p {
     font-size: 1.4em;
+    text-transform: uppercase;
+    color: #E03F3F;
 }
 
 #btnCamp {
@@ -413,7 +416,7 @@ main{
 
 .faq a {
     text-decoration: underline;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
 }
 
 .faq img {
@@ -439,6 +442,7 @@ main{
     flex-direction: column;
     text-align: center;
     z-index: 3;
+    padding: 1vh;
 }
 
 /* Animações */
@@ -502,7 +506,7 @@ main{
         letter-spacing: 0px;
     }
 
-    h1, h2 {
+    h1 {
         font-size: 2.3rem;
     }
 
@@ -617,6 +621,6 @@ main{
     }
 
     .faq p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
