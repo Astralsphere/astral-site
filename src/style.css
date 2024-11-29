@@ -177,15 +177,23 @@ main{
     background-color: black;
     cursor: pointer;
 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .essence-column {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
+}
+
+#essenleft {
+    left: 0;
+}
+#essenright {
+    right: 0;
 }
 
 iframe {
