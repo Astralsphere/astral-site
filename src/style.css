@@ -182,6 +182,12 @@ main{
     justify-content: center;
 }
 
+.essence-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 iframe {
     border-radius: 20px;
     width:100%; 
