@@ -155,22 +155,6 @@ main{
     animation: blink 3s infinite;
 }
 
-.plyun {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    transform: scaleX(-1);
-}
-
-#plyun1 {
-    width: 10%;
-    position: absolute;
-    display: block;
-    left: 2%;
-    animation: plyun 3s infinite reverse ease-in-out;
-    z-index: 1;
-}
-
 /* Trailer */
 .trailer {
     width: 100%;
@@ -229,7 +213,7 @@ main{
 }
 
 .imgCamp img {
-    width: 80%;
+    width: 65%;
     height: auto;
 
     border-radius: 20px;
@@ -249,7 +233,7 @@ main{
 .btn p {
     font-size: 1.4em;
     text-transform: uppercase;
-    color: #E03F3F;
+    color: #E86666;
 }
 
 #btnCamp {
@@ -262,14 +246,15 @@ main{
     text-align: center;
     align-items: center;
 
+    max-width: 80%;
     width: 53vh;
     height: 14vh;
 
     border-radius: 20px;
     border: none;
     animation: glow 3s infinite;
-    background-color: rgba(255, 0, 0, 0.2);
-    color: rgba(255, 0, 0, 0.500);
+    background-color: rgba(255, 0, 0, 0.25);
+    color: rgba(255, 0, 0, 0.600);
 
     transform: scale(1);
     transition: transform 0.5s ease;
@@ -281,7 +266,7 @@ main{
 
 #btnCamp:hover {
     background-image: url('../imgs/campButtonhover.png') !important;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 #btnCamp:active {
@@ -307,7 +292,7 @@ main{
 }
 
 .social a:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .redes {
@@ -345,10 +330,11 @@ main{
 .jogo {
     width: 40%;
     padding: 0vh 3vh;
+    text-align: center;
 }
 
 .jogo img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 20px;
     border: solid 2px rgba(31, 31, 75, 0.5);
     animation: glow 3s infinite;
@@ -479,7 +465,7 @@ main{
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
 
     to {
@@ -538,19 +524,27 @@ main{
 /* Responsividade (Mobile)*/
 @media screen and (max-width: 950px) {
     #btnCamp {
-        width: 100%;
+        height: 11vh;
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 810px){
     .navbar {
         transform: scale(1) !important;
     }
-    
-    #plyun1 {
-        width: 25% !important;
+
+    #drink {
+        margin-bottom: 50vh !important;
+    }
+
+    .imgCamp img {
+        max-width: 85% !important;
+    }
+
+    #btnCamp {
+        max-width: 55% !important;
     }
 }
 
@@ -597,12 +591,6 @@ main{
         overflow: hidden;
         opacity: 0;
         animation: none;
-    }
-
-    #plyun1 {
-        width: 30%;
-        padding-top: 4vh;
-        z-index: 1;
     }
 
     .trailer {
@@ -705,6 +693,6 @@ main{
 
     #drink {
         width: 30%;
-        margin-bottom: 50vh;
+        margin-bottom: 60vh;
     }
 }
