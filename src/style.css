@@ -273,6 +273,21 @@ main{
     background-image: url('../imgs/campButtonPress.png') !important;
 }
 
+.micred {
+    position: absolute;
+    width: 4vh;
+}
+
+#micro-left {
+    top: 0;
+    left: 0;
+}
+
+#micro-right {
+    bottom: 6px;
+    right: 8px;
+}
+
 /* Redes Sociais */
 .social {
     display: flex;
