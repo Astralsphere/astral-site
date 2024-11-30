@@ -129,6 +129,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 2vh;
 }
 
 .logo {
@@ -151,7 +152,7 @@ main{
     width: 12vh;
     height: 12vh;
     align-self:center;
-    left: 28%;
+    left: 28.5%;
     animation: blink 3s infinite;
 }
 
@@ -188,10 +189,6 @@ main{
     width: 45%;
     max-width: 50%;
     margin-bottom: 4vh;
-    border-radius: 20px;
-    animation: glow 3s infinite;
-    background-color: rgba(0, 255, 234, 0.13);
-    color: rgba(0, 255, 234, 0.3);
 }
 
 /* LEFT */
@@ -398,8 +395,10 @@ iframe {
 
 /* Sobre o Jogo */
 .sobre {
-    width: 100%;
+    width: calc(100% + 4vh);
     padding: 5vh;
+    position: relative;
+    left: -2vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -457,7 +456,6 @@ iframe {
     height: fit-content;
 
     padding: 5vh;
-    padding-top: 2vh;
     margin-top: 10vh;
 
     display: flex;
@@ -518,7 +516,7 @@ iframe {
     width: 15%;
     position: absolute;
     display: block;
-    left: 1%;
+    left: 3%;
     animation: plyun 3s infinite ease-in-out;
     z-index: 1;
     margin-bottom: 35vh;
@@ -609,6 +607,14 @@ iframe {
         height: 11vh;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    #drink {
+        left: 1%;
     }
 }
 
