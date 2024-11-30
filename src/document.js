@@ -10,11 +10,12 @@ $(document).ready(function () {
 
 function changeFlag() {
   var select = document.getElementById("ddlLanguage");
+  var img = document.getElementById("languageFlag");
   
   if (select.value === "en") {
-    document.getElementById("languageFlag").src= "imgs/Dictionary/usa.png";
+      img.src = "imgs/Dictionary/usa.png";
   } else if (select.value === "pt-br") {
-    document.getElementById("languageFlag").src= "imgs/Dictionary/brasil.jpg";
+      img.src = "imgs/Dictionary/brasil.png";
   }
 }
 
