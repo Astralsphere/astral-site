@@ -69,32 +69,20 @@ body {
 }
 
 header {
-    top: 0;
-    position: fixed;
     width: 100%;
     height: 11vh;
+    top: 0;
     display: flex;
-    color: white;
-    z-index: 10;
     align-items: center;
-}
+    position: fixed;
 
-/* Ajustes da Imagem de Fundo */
-header::before {
-    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
     border-top: 6px double var(--main-color);
     border-bottom: 6px double var(--main-color);
     animation: glow 3s infinite;
     color: var(--main-color);
-    
-    background-color: black !important;
-    opacity: 0.8 !important;
 
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    z-index: 10;
 }
 
 header ul {
@@ -538,6 +526,57 @@ iframe {
     margin: 1vh;
 }
 
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: auto; 
+    padding: 2vh;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: static;
+    color: white;
+
+    border-top: 6px double var(--main-color);
+    animation: glow 3s infinite;
+    color: var(--main-color);
+}
+
+footer .logo {
+    padding: 5vh;
+    height: auto;
+}
+
+footer .logo img {
+    width: 30%;
+}
+
+footer hr {
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), #ffffff, #ffffff, rgba(0, 0, 0, 0.7));
+    border: none;
+    margin-bottom: 5vh;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer .effect {
+    left: 36.35%;
+}
+
+.contato a p{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.35em !important;
+    margin-bottom: 3vh;
+}
+
 /* Animações */
 @keyframes link {
     from {
@@ -663,16 +702,33 @@ iframe {
         width: 100%;
     }
 
-    .logo {
+    main .logo {
         height: 35vh;
         margin-top: 3vh;
     }
 
-    .logo img {
+    main .logo img {
         width: 100%;
         padding-top: 0px;
         margin-bottom: 5vh;
         padding: 5px 20px;
+    }
+
+    footer .logo img{
+        width: 100%;
+    }
+
+    footer hr {
+        width: 70%;
+        margin-bottom: 2vh;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    .contato a p{
+        font-size: 0.8em !important;
     }
     
     .effect {
@@ -730,9 +786,7 @@ iframe {
 
     .sobre {
         flex-direction: column;
-        padding: 2vh;
-        padding-top: 4vh;
-        padding-bottom: 4vh;
+        padding: 4vh 2vh;
     }
 
     .jogo, .jogoTxt {

@@ -10,12 +10,12 @@ const schemaData = {
   "gameMode": "SinglePlayer",
   "publisher": {
     "@type": "Organization",
-    "name": ["Astral Sphere", "P8G"],
+    "name": ["Astral Sphere Games", "P8G"],
     "url": "https://p8g.com.br/pt/sobre/"
   },
   "developer": {
   "@type": "Organization",
-  "name": "Astral Sphere"
+  "name": "Astral Sphere Games"
   },
   "trailer": {
   "@type": "VideoObject",
