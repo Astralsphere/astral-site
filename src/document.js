@@ -8,6 +8,16 @@ $(document).ready(function () {
   });
 });
 
+function changeFlag() {
+  var select = document.getElementById("ddlLanguage");
+  
+  if (select.value === "en") {
+    document.getElementById("languageFlag").src= "imgs/Dictionary/usa.png";
+  } else if (select.value === "pt-br") {
+    document.getElementById("languageFlag").src= "imgs/Dictionary/brasil.jpg";
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.social img').forEach(function(img) {
     const originalSrc = img.src;

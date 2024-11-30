@@ -61,7 +61,7 @@ body {
     line-height: 1.6;
     font-size: 1em;
     
-    background-image: url("../imgs/estrelas.png") !important;
+    background-image: url("../imgs/Astral/estrelas.png") !important;
     background-color: #15144B;
     background-repeat: repeat-y !important;
     background-position: center !important;
@@ -110,6 +110,50 @@ header ul {
 
 .navbar li:last-child {
     border-right: none;
+}
+
+#language {
+    width: 24vh;
+    background-color: rgba(9, 0, 48, 0.7);
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    margin-left: 2vh;
+    height: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+#language hr {
+    width: 5px;
+    height: 80%;
+    background-color: white;
+    margin-right: 10px;
+    border: none;
+}
+
+#languageFlag {
+    max-width: 40%;
+    max-height: 70%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#languageFlag img {
+    max-width: 90%;
+}
+
+#ddlLanguage {
+    width: 80%;
+    color: white;
+    font-family: -var(--default-font);
+    border: none;
+    font-size: 17px;
+    background-color: rgba(9, 0, 48, 0.7);
+    border-radius: 20px;
 }
 
 /* Main - Logo */

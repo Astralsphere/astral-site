@@ -12,7 +12,7 @@
         jogos de nave, jogos de plataforma, jogo brasileiro, Plyun">
 
         <link rel="stylesheet" href="src/style.css">
-        <link rel="shortcut icon" href="imgs/astral.ico"/>
+        <link rel="shortcut icon" href="imgs/Astral/astral.ico"/>
 
         <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer src="src/schema.js"></script>
@@ -31,10 +31,12 @@
                     <li><a href="#camp" eo-translator="title-camp"></a></li>
                     <li><a href="#social" eo-translator="title-social"></a></li>
                     <li><a href="#faq" eo-translator="title-faq"></a></li>
-                    <li>
-                        <select id="ddlLanguage">
-                            <option value="en">English</option>
-                            <option value="pt-br">Português (Brasil)</option>
+                    <li id="language">
+                        <img id="languageFlag" src="imgs/Dictionary/brasil.jpg">
+                        <hr>
+                        <select id="ddlLanguage" onchange="changeFlag()">
+                            <option value="en"> EN </option>
+                            <option value="pt-br"> PT-BR </option>
                         </select>
                     </li>
                 </ul>
@@ -83,35 +85,35 @@
                 </span>
 
                 <span class="imgCamp">
-                    <img id="AC" src="imgs/AC.gif" Title="Asteroid City Art" alt="Asteroid City Art">
+                    <img id="AC" src="imgs/Astral/AC.gif" Title="Asteroid City Art" alt="Asteroid City Art">
                 </span>
 
                 <span class="social" id="social">
                     <p eo-translator="text-social"></p>
 
                     <a href="https://www.discord.com" target="_blank" style="margin-top: 7vh;">
-                        <img src="imgs/Social Button/Discord Button.png" alt="Discord">
+                        <img src="imgs/Buttons/Discord Button.png" alt="Discord">
                     </a>
 
                     <span class="redes">
                         <a href="https://www.x.com" target="_blank">
-                            <img src="imgs/Social Button/X Button.png" alt="Twitter">
+                            <img src="imgs/Buttons/X Button.png" alt="Twitter">
                         </a>
 
                         <a href="https://www.instagram.com" target="_blank">
-                            <img src="imgs/Social Button/Instagram Button.png" alt="Instagram">
+                            <img src="imgs/Buttons/Instagram Button.png" alt="Instagram">
                         </a>
 
                         <a href="https://www.youtube.com" target="_blank">
-                            <img src="imgs/Social Button/YouTube Button.png" alt="Youtube">
+                            <img src="imgs/Buttons/YouTube Button.png" alt="Youtube">
                         </a>
 
                         <a href="https://www.tiktok.com" target="_blank">
-                            <img src="imgs/Social Button/TikTok Button.png" alt="TikTok">
+                            <img src="imgs/Buttons/TikTok Button.png" alt="TikTok">
                         </a>
 
                         <a href="https://www.facebook.com" target="_blank">
-                            <img src="imgs/Social Button/Facebook Button.png" alt="Facebook">
+                            <img src="imgs/Buttons/Facebook Button.png" alt="Facebook">
                         </a>
                         <img src="imgs/Plyun/PlyunDash.png" id="dash" alt="Plyun!">
                     </span>
@@ -120,7 +122,7 @@
 
             <div class="sobre">
                 <span class="jogo">
-                    <img id="Plyun" src="imgs/astral.ico" title="Plyun" alt="Plyun!">
+                    <img id="Plyun" src="imgs/Astral/astral.ico" title="Plyun" alt="Plyun!">
                 </span>
                 <span class="jogoTxt">
                     <h1 eo-translator="header-sobre"></h1><br>
