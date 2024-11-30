@@ -8,6 +8,7 @@ $(document).ready(function () {
   });
 });
 
+/* Ajustes do Select*/
 function changeFlag() {
   var select = document.getElementById("ddlLanguage");
   var img = document.getElementById("languageFlag");
@@ -19,6 +20,7 @@ function changeFlag() {
   }
 }
 
+/* Botões */
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.social img').forEach(function(img) {
     const originalSrc = img.src;
@@ -40,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/* Trailer começa pausado */
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
