@@ -6,8 +6,8 @@
 }
 
 :root {
-    --main-color: rgba(0, 255, 221, 1);
-    --default-font: 'RetroGaming';
+    --main-color: rgba(0, 255, 221, 1) !important;
+    --default-font: 'RetroGaming' !important;
 }
 
 html {
@@ -145,7 +145,7 @@ main{
 }
 
 .effect {
-    background-color: white;
+    background-color: white !important;
     border-radius: 50px;
     position: absolute;
     width: 12vh;
@@ -175,31 +175,75 @@ main{
     color: var(--main-color);
 
     background-color: black;
-    cursor: pointer;
 
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .essence-column {
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
 }
 
-#essenleft {
-    left: 0;
+.essence-column img {
+    width: 45%;
+    max-width: 50%;
+    margin-bottom: 4vh;
 }
+
+/* LEFT */
+#essenleft {
+    right: 100%;
+    width: 12%;
+    transform: scaleX(-1) !important;
+}
+
+#minileft {
+    margin-left: 2vh;
+}
+
+#midleft {
+    margin-left: 8vh;
+}
+
+#microleft {
+    margin-top: 2vh;
+    margin-left: 4vh;
+    margin-bottom: 4vh;
+}
+
+#normalleft {
+    margin-left: 1vh;
+}
+
+/* RIGHT */
 #essenright {
-    right: 0;
+    left: 100%;
+    width: 12%;
+}
+
+#normalright1 {
+    margin-left: 6vh;
+}
+
+#medright {
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+#normalright2 {
+    margin-top: 2vh;
+    margin-left: 10vh;
+}
+
+#microright {
+   margin-left: 10px;
 }
 
 iframe {
     border-radius: 20px;
     width:100%; 
     height:100%;
+    cursor: pointer;
 }
 
 /* Campanha */
