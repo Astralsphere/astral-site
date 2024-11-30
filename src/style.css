@@ -188,6 +188,10 @@ main{
     width: 45%;
     max-width: 50%;
     margin-bottom: 4vh;
+    border-radius: 20px;
+    animation: glow 3s infinite;
+    background-color: rgba(0, 255, 234, 0.13);
+    color: rgba(0, 255, 234, 0.3);
 }
 
 /* LEFT */
@@ -198,7 +202,7 @@ main{
 }
 
 #minileft {
-    margin-left: 2vh;
+    margin-left: 3vh;
 }
 
 #midleft {
@@ -207,12 +211,12 @@ main{
 
 #microleft {
     margin-top: 2vh;
-    margin-left: 4vh;
+    margin-left: 4.5vh;
     margin-bottom: 4vh;
 }
 
 #normalleft {
-    margin-left: 1vh;
+    margin-left: 2vh;
 }
 
 /* RIGHT */
@@ -221,8 +225,8 @@ main{
     width: 12%;
 }
 
-#normalright1 {
-    margin-left: 6vh;
+#normalright {
+    margin-left: 7.5vh;
 }
 
 #medright {
@@ -230,9 +234,9 @@ main{
     margin-left: 2vh;
 }
 
-#normalright2 {
+#miniright {
     margin-top: 2vh;
-    margin-left: 10vh;
+    margin-left: 6.5vh;
 }
 
 #microright {
@@ -342,12 +346,12 @@ iframe {
     width: 5vh;
 }
 
-#micro-left {
+#btnmicro-left {
     top: 0;
     left: 0;
 }
 
-#micro-right {
+#btnmicro-right {
     bottom: 6px;
     right: 8px;
 }
