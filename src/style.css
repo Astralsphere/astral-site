@@ -567,6 +567,7 @@ footer hr {
 
 footer p {
     font-size: 0.8em;
+    padding-bottom: 1vh;
 }
 
 footer .effect {
@@ -665,6 +666,14 @@ footer .effect {
         transform: scale(1) !important;
     }
 
+    .logo {
+        height: 25vh !important;
+    }
+
+    footer .logo img {
+        width: 80% !important;
+    }
+
     #drink {
         margin-bottom: 50vh !important;
     }
@@ -700,7 +709,7 @@ footer .effect {
     }
 
     header {
-        height: 8vh;
+        height: 9vh;
     }
 
     .navbar {
@@ -715,8 +724,11 @@ footer .effect {
         width: 100%;
     }
 
-    main .logo {
+    .logo {
         height: 20vh;
+    }
+
+    main .logo {
         margin-top: 3vh;
     }
 
@@ -761,7 +773,7 @@ footer .effect {
     }
 
     .campanha {
-        padding: 3vh 0 8vh;
+        padding: 0vh 0 8vh;
     }
 
     .campanha p {
