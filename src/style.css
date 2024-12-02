@@ -274,7 +274,7 @@ iframe {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    padding: 10vh 0 10vh;
+    padding: 5vh 10vh;
     text-align: center;
 }
 
@@ -367,8 +367,9 @@ iframe {
 .social {
     display: flex;
     flex-direction: column;
-    font-size: 1.3em;
     align-items: center;
+    font-size: 1.2em;
+    margin: 2vh;
 }
 
 .social a {
@@ -589,11 +590,9 @@ footer .effect {
     from {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.15);
     }
-
     to {
         transform: scale(1);
     }
@@ -789,6 +788,7 @@ footer .effect {
 
     .social {
         justify-content: center;
+        margin: 0;
     }
 
     .social a {
