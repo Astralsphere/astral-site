@@ -102,8 +102,6 @@ header ul {
     padding: 0 25px;
     font-size: 1.3em;
     text-transform: uppercase;
-    transform: scale(1);
-    
     border-right: 2px solid white;
 }
 
@@ -152,10 +150,12 @@ header ul {
     cursor: pointer;
     padding: 5px;
     min-width: 95px;
+
+    appearance: none;
 }
 
 /* Main - Logo */
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +181,6 @@ main{
     position: absolute;
     width: 12vh;
     height: 12vh;
-    align-self:center;
     left: 28.5%;
     animation: blink 3s infinite;
 }
@@ -190,7 +189,6 @@ main{
 .trailer {
     width: 100%;
     height: 40vh;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,12 +199,9 @@ main{
     height: 100%;
     border-radius: 20px;
     border: 2px double var(--main-color);
-
     animation: glow 3s infinite;
     color: var(--main-color);
-
     background-color: black;
-
     position: relative;
 }
 
@@ -237,9 +232,7 @@ main{
 }
 
 #microleft {
-    margin-top: 2vh;
-    margin-left: 4.5vh;
-    margin-bottom: 4vh;
+    margin: 2vh 0 4vh 4.5vh;
 }
 
 #normalleft {
@@ -257,23 +250,21 @@ main{
 }
 
 #medright {
-    margin-top: 2vh;
-    margin-left: 2vh;
+    margin: 2vh 0 0 2vh;
 }
 
 #miniright {
-    margin-top: 2vh;
-    margin-left: 6.5vh;
+    margin: 2vh 0 0 6.5vh;
 }
 
 #microright {
-   margin-left: 10px;
+    margin-left: 10px;
 }
 
 iframe {
     border-radius: 20px;
-    width:100%; 
-    height:100%;
+    width: 100%; 
+    height: 100%;
     cursor: pointer;
 }
 
@@ -283,9 +274,7 @@ iframe {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    padding: 25vh;
-    padding-top: 0;
-    padding-bottom: 10vh;
+    padding: 10vh 0 10vh;
     text-align: center;
 }
 
@@ -310,13 +299,10 @@ iframe {
 .imgCamp img {
     width: 65%;
     height: auto;
-
     border-radius: 20px;
     border: solid 2px rgba(255, 255, 255, 0.158);
     animation: glow 3s infinite;
     color: rgba(255, 255, 255, 0.253);
-
-    transform: scale(1);
     transition: transform 0.5s ease;
 }
 
@@ -333,26 +319,20 @@ iframe {
 
 #btnCamp {
     background-image: url('../imgs/Buttons/campButton.png') !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 100% 100% !important;
     cursor: pointer;
-
-    text-align: center;
-    align-items: center;
-
     max-width: 80%;
     width: 53vh;
     height: 14vh;
-
     border-radius: 20px;
     border: none;
     animation: glow 3s infinite;
     background-color: rgba(255, 0, 0, 0.25);
     color: rgba(255, 0, 0, 0.600);
-
-    transform: scale(1);
     transition: transform 0.5s ease;
+    transform: scale(1);
 }
 
 .imgCamp img:hover {
@@ -417,7 +397,6 @@ iframe {
 #dash {
     width: 13%;
     position: absolute;
-    display: block;
     left: 1%;
     animation: moving 4s infinite;
     z-index: 1;
@@ -432,7 +411,6 @@ iframe {
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     
@@ -441,7 +419,7 @@ iframe {
 
 .jogo {
     width: 40%;
-    padding: 0vh 3vh;
+    padding: 0 3vh;
     text-align: center;
 }
 
@@ -451,13 +429,10 @@ iframe {
     border: solid 2px rgba(31, 31, 75, 0.5);
     animation: glow 3s infinite;
     color: rgb(31, 31, 75);
-
-    transform: scale(1);
     transition: transform 0.5s ease;
 }
 
 #Plyun:hover {
-    transition: transform 0.5s ease;
     transform: scale(1.1);
 }
 
@@ -467,8 +442,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0vh 5vh;
-
+    padding: 0 5vh;
     font-size: 0.8em;
 }
 
@@ -477,14 +451,12 @@ iframe {
 }
 
 .jogoTxt h1 {
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 /* Screenshots */
 .screenshots {
     width: 100%;
-    height: fit-content;
-
     padding: 5vh;
     margin-top: 10vh;
 
@@ -504,7 +476,6 @@ iframe {
 .fotos-row {
     padding-top: 3vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -519,7 +490,6 @@ iframe {
     max-height: 50%;
     border-radius: 20px;
     border: 2px double var(--main-color);
-
     animation: glow 3s infinite;
     color: var(--main-color);
 }
@@ -528,9 +498,7 @@ iframe {
 .faq {
     width: 100%;
     padding: 10vh;
-
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -545,7 +513,6 @@ iframe {
 #drink {
     width: 15%;
     position: absolute;
-    display: block;
     left: 3%;
     animation: plyun 3s infinite ease-in-out;
     z-index: 1;
@@ -572,24 +539,18 @@ iframe {
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: auto; 
-    padding: 2vh;
-    padding-top: 0;
+    padding: 2vh 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    position: static;
-    color: white;
-
+    color: var(--main-color);
     border-top: 6px double var(--main-color);
     animation: glow 3s infinite;
-    color: var(--main-color);
 }
 
 footer .logo {
     padding: 5vh;
-    height: auto;
 }
 
 footer .logo img {
@@ -609,10 +570,10 @@ footer p {
 }
 
 footer .effect {
-    left: 36.35%;
+    left: 36%;
 }
 
-.contato a p{
+.contato a p {
     text-transform: uppercase;
     text-decoration: underline;
     font-size: 1.35em !important;
@@ -699,7 +660,7 @@ footer .effect {
     }
 }
 
-@media screen and (min-width: 810px){
+@media screen and (min-width: 810px) {
     .navbar {
         transform: scale(1) !important;
     }
@@ -716,6 +677,7 @@ footer .effect {
         max-width: 55% !important;
     }
 }
+
 @media screen and (max-width: 400px) {
     .navbar {
         transform: scale(0.45) !important;
@@ -727,11 +689,10 @@ footer .effect {
     }
 }
 
-
 @media screen and (max-width: 810px) {
     * {
         font-size: 1em;
-        letter-spacing: 0px;
+        letter-spacing: 0;
     }
 
     h1 {
@@ -742,9 +703,8 @@ footer .effect {
         height: 8vh;
     }
 
-    .navbar{
+    .navbar {
         transform: scale(0.5);
-
         width: 0;
         padding: 0;
     }
@@ -762,12 +722,12 @@ footer .effect {
 
     main .logo img {
         width: 100%;
-        padding-top: 0px;
+        padding-top: 0;
         margin-bottom: 5vh;
         padding: 5px 20px;
     }
 
-    footer .logo img{
+    footer .logo img {
         width: 100%;
     }
 
@@ -780,7 +740,7 @@ footer .effect {
         font-size: 0.7rem;
     }
 
-    .contato a p{
+    .contato a p {
         font-size: 0.8em !important;
     }
     
@@ -801,12 +761,10 @@ footer .effect {
     }
 
     .campanha {
-        padding: 3vh;
-        padding-top: 0px;
-        padding-bottom: 8vh;
+        padding: 3vh 0 8vh;
     }
 
-    .campanha p{
+    .campanha p {
         font-size: 0.85em;
     }
 
@@ -818,8 +776,8 @@ footer .effect {
         justify-content: center;
     }
 
-    .social a{
-        padding-right: 0px;
+    .social a {
+        padding-right: 0;
         animation: none;
     }
 
@@ -851,7 +809,7 @@ footer .effect {
     }
 
     .jogoTxt {
-        padding: 0vh 2vh;
+        padding: 0 2vh;
     }
 
     .screenshots {
@@ -874,7 +832,7 @@ footer .effect {
     }
 
     .faq {
-        padding: 0vh;
+        padding: 0;
     }
 
     .faq p {
