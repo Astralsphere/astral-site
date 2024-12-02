@@ -539,18 +539,22 @@ iframe {
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    padding: 2vh 0;
+    height: auto; 
+    padding: 2vh;
+    padding-top: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     text-align: center;
-    color: var(--main-color);
+    position: static;
     border-top: 6px double var(--main-color);
     animation: glow 3s infinite;
+    color: var(--main-color);
 }
 
 footer .logo {
     padding: 5vh;
+    height: auto;
 }
 
 footer .logo img {
@@ -567,11 +571,10 @@ footer hr {
 
 footer p {
     font-size: 0.8em;
-    padding-bottom: 1vh;
 }
 
 footer .effect {
-    left: 36%;
+    left: 36.35%;
 }
 
 .contato a p {
@@ -661,7 +664,7 @@ footer .effect {
     }
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 810px) and (max-width: 1000px) {
     .navbar {
         transform: scale(1) !important;
     }
