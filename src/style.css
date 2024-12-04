@@ -21,6 +21,7 @@ html {
     padding: 0;
     margin: 0;
     letter-spacing: 1px;
+    font-family: var(--default-font), Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul {
@@ -46,7 +47,6 @@ a:hover {
 p {
     color: white;
     font-size: 1.3em;
-    font-family: var(--default-font);
 }
 
 h1{
@@ -56,7 +56,6 @@ h1{
 }
 
 body {
-    font-family: var(--default-font);
     color: white;
     line-height: 1.6;
     font-size: 1em;
@@ -142,7 +141,6 @@ header ul {
 #ddlLanguage {
     flex: 1;
     color: white;
-    font-family: var(--default-font);
     border: none;
     font-size: 17px;
     background: rgba(9, 0, 48, 0.7);
