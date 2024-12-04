@@ -587,6 +587,15 @@ footer .effect {
     margin-bottom: 3vh;
 }
 
+#music {
+    width: 15%;
+    position: absolute;
+    right: 3%;
+    animation: dance 4s infinite linear;
+    z-index: 1;
+    margin-top: 5vh;
+}
+
 /* Animações */
 @keyframes link {
     from {
@@ -648,6 +657,33 @@ footer .effect {
     }
 }
 
+@keyframes dance {
+    from {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(45deg);
+    }
+    30%{
+        transform: rotate(-45deg);
+    }
+    45% {
+        transform: rotate(45deg);
+    }
+    60%{
+        transform: rotate(-45deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+    90%{
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 /* Responsividade (Mobile)*/
 @media screen and (max-width: 950px) {
     #btnCamp {
@@ -662,6 +698,10 @@ footer .effect {
 
     #drink {
         left: 1%;
+    }
+
+    #music {
+        display: none !important;
     }
 }
 
