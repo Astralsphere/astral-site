@@ -10,10 +10,12 @@
     --default-font: 'RetroGaming' !important;
 }
 
+/* Padrões do site */
 html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--main-color) rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin;
     overflow-x: hidden;
-    font-size: 16px;
 }
   
 * {
@@ -22,6 +24,21 @@ html {
     margin: 0;
     letter-spacing: 1px;
     font-family: var(--default-font), Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+img {
+    outline: none;
+}
+
+img {
+    -webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -67,8 +84,27 @@ body {
     background-size: 100% !important;
 }
 
-/* Loading */
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 221, 0.9);
+}
+
+/* Loading */
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in;
@@ -123,6 +159,7 @@ body {
     }
 }
 
+/* Header + Opções */
 .options {
     display: none;
 }
@@ -148,7 +185,6 @@ header ul {
     display: flex;
 }
 
-/* Opções do Header */
 .navbar {
     display: flex;
     justify-content: space-between;

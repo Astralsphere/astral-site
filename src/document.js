@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const executionTime = performance.now() - startTime;
 
     const intervalSpeed = Math.max(50, Math.min(500, executionTime * 5));
-    console.log(`Velocidade da barra ajustada para ${intervalSpeed}ms`);
 
     const loadingInterval = setInterval(() => {
         if (progress < 100) {
