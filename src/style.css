@@ -221,7 +221,7 @@ main {
 }
 
 .logo {
-    width: 100%;
+    width: 100% !important;
     height: 45vh;
     display: flex;
     align-items: center;
@@ -632,10 +632,6 @@ footer p {
     font-size: 0.8em;
 }
 
-footer .effect {
-    left: 36.35%;
-}
-
 .contato a p {
     text-transform: uppercase;
     text-decoration: underline;
@@ -718,22 +714,22 @@ footer .effect {
         transform: rotate(0deg);
     }
     15% {
-        transform: rotate(45deg);
+        transform: rotate(25deg);
     }
     30%{
-        transform: rotate(-45deg);
+        transform: rotate(-25deg);
     }
     45% {
-        transform: rotate(45deg);
+        transform: rotate(25deg);
     }
     60%{
-        transform: rotate(-45deg);
+        transform: rotate(-25deg);
     }
     75% {
-        transform: rotate(45deg);
+        transform: rotate(25deg);
     }
     90%{
-        transform: rotate(-45deg);
+        transform: rotate(-25deg);
     }
     to {
         transform: rotate(0deg);
@@ -827,7 +823,7 @@ footer .effect {
         width: 6vh;
         height: 7vh;
         text-align: center;
-        border-radius: 4vh;
+        border-radius: 50px;
         background: black;
         border: 4px double var(--main-color);
         color: var(--main-color);
@@ -844,7 +840,7 @@ footer .effect {
         height: 9vh;
     }
 
-    #inicio {
+    #home {
         overflow: hidden;
         display: none !important;
         width: 0px !important;
