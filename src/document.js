@@ -1,3 +1,45 @@
+/* Loading*/
+document.addEventListener("DOMContentLoaded", function() {
+  const loading = document.getElementById('loading');
+  const progressBar = document.getElementById('progress-bar');
+  const content = document.getElementById('content');
+  let progress = 0;
+  document.body.classList.add('no-scroll');
+  const loadingInterval = setInterval(() => {
+    if (progress < 100) {
+        progress += 10;
+        progressBar.style.width = progress + '%';
+    } else {
+        clearInterval(loadingInterval);
+        progressBar.classList.add('pulse');
+        loading.style.transition = 'opacity 1s ease';
+        loading.style.opacity = '0';
+        setTimeout(() => {
+            loading.style.display = 'none';
+            content.classList.add('visible');
+            document.body.classList.remove('no-scroll');
+          }, 1000);
+    }
+}, 500);
+
+  /* Botões */
+  document.querySelectorAll('.social img').forEach(function(img) {
+    const originalSrc = img.src;
+    img.addEventListener('mouseover', function() {
+        img.src = originalSrc.replace('.png', ' hover.png');
+    });
+    img.addEventListener('mouseout', function() {
+        img.src = originalSrc;
+    });
+    img.addEventListener('mousedown', function() {
+        img.src = originalSrc.replace('.png', ' pressed.png');
+    });
+    img.addEventListener('mouseup', function() {
+        img.src = originalSrc.replace('.png', ' hover.png');
+    });
+  });
+});
+
 $(document).ready(function () {
   $("a").on("animationiteration", function () {
     $(this).removeClass("animated");
@@ -17,25 +59,6 @@ function changeFlag() {
       img.src = "imgs/Dictionary/brasil.png";
   }
 }
-
-/* Botões */
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.social img').forEach(function(img) {
-    const originalSrc = img.src;
-    img.addEventListener('mouseover', function() {
-        img.src = originalSrc.replace('.png', ' hover.png');
-    });
-    img.addEventListener('mouseout', function() {
-        img.src = originalSrc;
-    });
-    img.addEventListener('mousedown', function() {
-        img.src = originalSrc.replace('.png', ' pressed.png');
-    });
-    img.addEventListener('mouseup', function() {
-        img.src = originalSrc.replace('.png', ' hover.png');
-    });
-  });
-});
 
 /* Trailer começa pausado */
 var tag = document.createElement('script');

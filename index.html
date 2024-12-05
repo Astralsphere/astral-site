@@ -23,173 +23,181 @@
         <title>Astral Adventure</title>
     </head>
     <body>
+        <div id="loading">
+            <div id="progress-bar"></div>
+            <p>Carregando...</p>
+        </div>
+
         <div class="options">
             <div class="return">
                 <a href="#"> <i class="fa fa-arrow-up" style="margin-top: 1.5vh;"></i> </a>
             </div>
         </div>
-        <header>
-            <div class="navbar">
-                <ul>
-                    <li><a id="inicio" href="#inicio" eo-translator="title-sobre"></a></li>
-                    <li><a href="#camp" eo-translator="title-camp"></a></li>
-                    <li><a href="#social" eo-translator="title-social"></a></li>
-                    <li><a href="#faq" eo-translator="title-faq"></a></li>
-                    <li id="language">
-                        <img id="languageFlag" src="imgs/Dictionary/brasil.png">
-                        <hr>
-                        <select id="ddlLanguage" onchange="changeFlag()">
-                            <option value="pt-br"> PT-BR </option>
-                            <option value="en"> EN </option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        
+        <div id="content" class="fade-in">
+            <header>
+                <div class="navbar">
+                    <ul>
+                        <li><a id="inicio" href="#inicio" eo-translator="title-sobre"></a></li>
+                        <li><a href="#camp" eo-translator="title-camp"></a></li>
+                        <li><a href="#social" eo-translator="title-social"></a></li>
+                        <li><a href="#faq" eo-translator="title-faq"></a></li>
+                        <li id="language">
+                            <img id="languageFlag" src="imgs/Dictionary/brasil.png">
+                            <hr>
+                            <select id="ddlLanguage" onchange="changeFlag()">
+                                <option value="pt-br"> PT-BR </option>
+                                <option value="en"> EN </option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </header>
 
-        <main>
-            <div class="logo" id="inicio">
-                <img id="AstralAdventure" src="imgs/Logos/AstralAdventure.png" Title="Astral Adventure!" alt="Astral Adventure!">
-                <span class="effect"></span>
-            </div>
+            <main>
+                <div class="logo" id="inicio">
+                    <img id="AstralAdventure" src="imgs/Logos/AstralAdventure.png" Title="Astral Adventure!" alt="Astral Adventure!">
+                    <span class="effect"></span>
+                </div>
 
-            <div class="trailer">
-                <span class="video">
-                    <span class="essence-column" id="essenleft">
-                        <img id="minileft" src="imgs/Essences/Mini.gif">
-                        <img id="midleft" src="imgs/Essences/Med.gif">
-                        <img id="microleft" src="imgs/Essences/Micro.gif">
-                        <img id="normalleft" src="imgs/Essences/Normal.gif">
+                <div class="trailer">
+                    <span class="video">
+                        <span class="essence-column" id="essenleft">
+                            <img id="minileft" src="imgs/Essences/Mini.gif">
+                            <img id="midleft" src="imgs/Essences/Med.gif">
+                            <img id="microleft" src="imgs/Essences/Micro.gif">
+                            <img id="normalleft" src="imgs/Essences/Normal.gif">
+                        </span>
+
+                            <!-- <iframe id="youtube-video" src="https://www.youtube.com/embed/8UI-t1i_kHE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                            Comentando porque deixa o loading do site MUITO lento-->              
+                        
+                        <span class="essence-column" id="essenright">
+                            <img id="normalright" src="imgs/Essences/Normal.gif">
+                            <img id="medright" src="imgs/Essences/Med.gif">
+                            <img id="miniright" src="imgs/Essences/Mini.gif">
+                            <img id="microright" src="imgs/Essences/Micro.gif">
+                        </span>
+                    </span>
+                </div>
+
+                <div class="campanha" id="camp">
+                    <span class="sinopse">
+                        <h1 eo-translator="title-camp">Campanha</h1>
+                        <p eo-translator="text-camp"></p>
                     </span>
 
-                        <!-- <iframe id="youtube-video" src="https://www.youtube.com/embed/8UI-t1i_kHE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                         Comentando porque deixa o loading do site MUITO lento-->              
-                    
-                    <span class="essence-column" id="essenright">
-                        <img id="normalright" src="imgs/Essences/Normal.gif">
-                        <img id="medright" src="imgs/Essences/Med.gif">
-                        <img id="miniright" src="imgs/Essences/Mini.gif">
-                        <img id="microright" src="imgs/Essences/Micro.gif">
+                    <span class="btn">
+                        <button id="btnCamp" alt="Acesse a campanha!">
+                            <img class="micred" id="btnmicro-left" src="imgs/Essences/MicroRed.gif">
+                                <p eo-translator="btn-access-camp"></p>
+                            <img class="micred" id="btnmicro-right" src="imgs/Essences/MicroRed.gif">
+                        </button>
                     </span>
-                </span>
-            </div>
 
-            <div class="campanha" id="camp">
-                <span class="sinopse">
-                    <h1 eo-translator="title-camp">Campanha</h1>
-                    <p eo-translator="text-camp"></p>
-                </span>
+                    <span class="imgCamp">
+                        <img id="AC" src="imgs/Astral/AC.gif" Title="Asteroid City Art" alt="Asteroid City Art">
+                    </span>
 
-                <span class="btn">
-                    <button id="btnCamp" alt="Acesse a campanha!">
-                        <img class="micred" id="btnmicro-left" src="imgs/Essences/MicroRed.gif">
-                            <p eo-translator="btn-access-camp"></p>
-                        <img class="micred" id="btnmicro-right" src="imgs/Essences/MicroRed.gif">
-                    </button>
-                </span>
+                    <span class="social" id="social">
+                        <p eo-translator="text-social"></p>
 
-                <span class="imgCamp">
-                    <img id="AC" src="imgs/Astral/AC.gif" Title="Asteroid City Art" alt="Asteroid City Art">
-                </span>
+                        <a href="https://www.discord.com" target="_blank" style="margin-top: 7vh;">
+                            <img src="imgs/Buttons/Discord Button.png" alt="Discord">
+                        </a>
 
-                <span class="social" id="social">
-                    <p eo-translator="text-social"></p>
+                        <span class="redes">
+                            <a href="https://www.x.com" target="_blank">
+                                <img src="imgs/Buttons/X Button.png" alt="Twitter">
+                            </a>
 
-                    <a href="https://www.discord.com" target="_blank" style="margin-top: 7vh;">
-                        <img src="imgs/Buttons/Discord Button.png" alt="Discord">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="imgs/Buttons/Instagram Button.png" alt="Instagram">
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img src="imgs/Buttons/YouTube Button.png" alt="Youtube">
+                            </a>
+
+                            <a href="https://www.tiktok.com" target="_blank">
+                                <img src="imgs/Buttons/TikTok Button.png" alt="TikTok">
+                            </a>
+
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="imgs/Buttons/Facebook Button.png" alt="Facebook">
+                            </a>
+                            <img src="imgs/Plyun/PlyunDash.png" id="dash" alt="Plyun!">
+                        </span>
+                    </span>
+                </div>
+
+                <div class="sobre">
+                    <span class="jogo">
+                        <img id="Plyun" src="imgs/Astral/astral.ico" title="Plyun" alt="Plyun!">
+                    </span>
+                    <span class="jogoTxt">
+                        <h1 eo-translator="header-sobre"></h1><br>
+                        <p eo-translator="text-sobre-1"></p>
+                        <br>
+
+                        <p eo-translator="text-sobre-2"></p>
+                        <br>
+                    </span>
+                </div>
+
+                <div class="screenshots">
+                    <span class="fotos-column">
+                        <h1>Screenshots</h1>
+                        <span class="fotos-row">
+                            <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
+                            <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
+                            <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
+                        </span>
+
+                        <span class="fotos-row">
+                            <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
+                            <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
+                            <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="faq" id="faq">
+                    <h1>Perguntas Recorrentes</h1>
+                    <img src="imgs/Plyun/PlyunDrink.png" id="drink" alt="Plyun!">
+                    <span class="quests-row">
+                        <span class="quests-column">
+                            <p><a href="">Quando o jogo será lançado?</a></p>
+                            <p><a href="">O jogo terá microtransações?</a></p>
+                            <p><a href="">Vai ser de graça?</a></p>
+                        </span>
+
+                        <span class="quests-column">
+                            <p><a href="">Como originou a ideia do Astral?</a></p>
+                            <p><a href="">Vai ter versão para PC ou Consoles?</a></p>
+                            <p><a href="">Quais foram as inspirações?</a></p>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="email">
+
+                </div>
+            </main>
+            <footer>
+                <img src="imgs/Plyun/PlyunMusic.png" id="music" alt="Plyun!">
+                <div class="logo">
+                    <img src="imgs/Logos/AstralSphere.png" Title="Astral Sphere Games" alt="Astral Sphere Games">
+                    <span class="effect"></span>
+                </div>
+                <p>© Astral Adventure. Desenvolvido pela Astral Sphere Games.</p>
+                <hr>
+                <div class="contato">
+                    <a href="mailto:contato@astralsphere.com">
+                        <p>Contato</p>
                     </a>
-
-                    <span class="redes">
-                        <a href="https://www.x.com" target="_blank">
-                            <img src="imgs/Buttons/X Button.png" alt="Twitter">
-                        </a>
-
-                        <a href="https://www.instagram.com" target="_blank">
-                            <img src="imgs/Buttons/Instagram Button.png" alt="Instagram">
-                        </a>
-
-                        <a href="https://www.youtube.com" target="_blank">
-                            <img src="imgs/Buttons/YouTube Button.png" alt="Youtube">
-                        </a>
-
-                        <a href="https://www.tiktok.com" target="_blank">
-                            <img src="imgs/Buttons/TikTok Button.png" alt="TikTok">
-                        </a>
-
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="imgs/Buttons/Facebook Button.png" alt="Facebook">
-                        </a>
-                        <img src="imgs/Plyun/PlyunDash.png" id="dash" alt="Plyun!">
-                    </span>
-                </span>
-            </div>
-
-            <div class="sobre">
-                <span class="jogo">
-                    <img id="Plyun" src="imgs/Astral/astral.ico" title="Plyun" alt="Plyun!">
-                </span>
-                <span class="jogoTxt">
-                    <h1 eo-translator="header-sobre"></h1><br>
-                    <p eo-translator="text-sobre-1"></p>
-                    <br>
-
-                    <p eo-translator="text-sobre-2"></p>
-                    <br>
-                </span>
-            </div>
-
-            <div class="screenshots">
-                <span class="fotos-column">
-                    <h1>Screenshots</h1>
-                    <span class="fotos-row">
-                        <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
-                        <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
-                        <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
-                    </span>
-
-                    <span class="fotos-row">
-                        <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
-                        <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
-                        <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
-                    </span>
-                </span>
-            </div>
-
-            <div class="faq" id="faq">
-                <h1>Perguntas Recorrentes</h1>
-                <img src="imgs/Plyun/PlyunDrink.png" id="drink" alt="Plyun!">
-                <span class="quests-row">
-                    <span class="quests-column">
-                        <p><a href="">Quando o jogo será lançado?</a></p>
-                        <p><a href="">O jogo terá microtransações?</a></p>
-                        <p><a href="">Vai ser de graça?</a></p>
-                    </span>
-
-                    <span class="quests-column">
-                        <p><a href="">Como originou a ideia do Astral?</a></p>
-                        <p><a href="">Vai ter versão para PC ou Consoles?</a></p>
-                        <p><a href="">Quais foram as inspirações?</a></p>
-                    </span>
-                </span>
-            </div>
-
-            <div class="email">
-
-            </div>
-        </main>
-        <footer>
-            <img src="imgs/Plyun/PlyunMusic.png" id="music" alt="Plyun!">
-            <div class="logo">
-                <img src="imgs/Logos/AstralSphere.png" Title="Astral Sphere Games" alt="Astral Sphere Games">
-                <span class="effect"></span>
-            </div>
-            <p>© Astral Adventure. Desenvolvido pela Astral Sphere Games.</p>
-            <hr>
-            <div class="contato">
-                <a href="mailto:contato@astralsphere.com">
-                    <p>Contato</p>
-                </a>
-            </div>
-        </footer>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
