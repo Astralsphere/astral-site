@@ -13,7 +13,7 @@
 /* Padrões do site */
 html {
     scroll-behavior: smooth;
-    scrollbar-color: var(--main-color) rgba(0, 0, 0, 0.1);
+    scrollbar-color: var(--main-color) transparent;
     scrollbar-width: thin;
     overflow-x: hidden;
 }
@@ -676,11 +676,21 @@ footer p {
     margin-bottom: 3vh;
 }
 
+#box {
+    width: 8%;
+    position: absolute;
+    right: 16%;
+    z-index: 1;
+    margin-top: 15.5vh;
+    animation: bounce 0.7s infinite ease-in-out;
+}
+
 #music {
-    width: 15%;
+    width: 11%;
     position: absolute;
     right: 3%;
-    animation: dance 4s infinite linear;
+    animation: dance 2.5s infinite;
+    display: inline-block;
     z-index: 1;
     margin-top: 5vh;
 }
@@ -747,29 +757,29 @@ footer p {
 }
 
 @keyframes dance {
-    from {
-        transform: rotate(0deg);
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
     }
-    15% {
-        transform: rotate(25deg);
+    10%, 40%, 70%, 90% {
+        transform: rotate(25deg) scale(1.1);
+        opacity: 0.9;
     }
-    30%{
-        transform: rotate(-25deg);
+    20%, 50%, 80% {
+        transform: rotate(-25deg) scale(1);
+        opacity: 1;
     }
-    45% {
-        transform: rotate(25deg);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
     }
-    60%{
-        transform: rotate(-25deg);
+    40% {
+        transform: translateY(-20px);
     }
-    75% {
-        transform: rotate(25deg);
-    }
-    90%{
-        transform: rotate(-25deg);
-    }
-    to {
-        transform: rotate(0deg);
+    60% {
+        transform: translateY(-10px);
     }
 }
 
@@ -789,7 +799,7 @@ footer p {
         left: 1%;
     }
 
-    #music {
+    #music, #box {
         display: none !important;
     }
 }
