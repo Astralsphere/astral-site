@@ -31,7 +31,7 @@ const loadingInterval = setInterval(() => {
     }
 }, intervalSpeed);
 
-  /* Botões */
+/* Botões */
   document.querySelectorAll('.social img').forEach(function(img) {
     const originalSrc = img.src;
     img.addEventListener('mouseover', function() {
@@ -46,6 +46,20 @@ const loadingInterval = setInterval(() => {
     img.addEventListener('mouseup', function() {
         img.src = originalSrc.replace('.png', ' hover.png');
     });
+  });
+});
+
+/* Garante uma animação ao clicar no Header */
+document.querySelectorAll('.navbar a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      targetElement.scrollIntoView({
+          behavior: 'smooth'
+      });
   });
 });
 
@@ -84,4 +98,13 @@ function onYouTubeIframeAPIReady() {
 }
 function onPlayerReady(event) {
     event.target.pauseVideo();
+}
+
+function toggleResposta(id) {
+  var resposta = document.getElementById(id);
+  if (resposta.classList.contains('show')) {
+      resposta.classList.remove('show');
+  } else {
+      resposta.classList.add('show');
+  }
 }

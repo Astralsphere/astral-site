@@ -599,11 +599,11 @@ iframe {
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .faq a {
     text-decoration: underline;
-    padding-bottom: 3vh;
 }
 
 #drink {
@@ -612,7 +612,7 @@ iframe {
     left: 3%;
     animation: plyun 3s infinite ease-in-out;
     z-index: 1;
-    margin-bottom: 35vh;
+    bottom: 100%;
 }
 
 .quests-row {
@@ -629,6 +629,30 @@ iframe {
     text-align: center;
     z-index: 3;
     margin: 1vh;
+}
+
+.resposta {
+    height: 70px;
+    font-size: 0.9em;
+    margin: 2px 10px;
+    opacity: 0 !important;
+    transform: translateY(10px);
+    font-style: italic;
+    color: rgb(0, 217, 255);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: block;
+    z-index: 1;
+}
+
+.resposta.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+.pergunta {
+    cursor: pointer !important;
+    color: white;
+    z-index: 2;
 }
 
 /* Footer */
@@ -689,7 +713,7 @@ footer p {
     width: 11%;
     position: absolute;
     right: 3%;
-    animation: dance 2.5s infinite;
+    animation: dance 2.8s infinite;
     display: inline-block;
     z-index: 1;
     margin-top: 5vh;
@@ -813,12 +837,12 @@ footer p {
         height: 25vh !important;
     }
 
-    footer .logo img {
-        width: 80% !important;
+    .resposta {
+        font-size: 0.7em !important;
     }
 
-    #drink {
-        margin-bottom: 50vh !important;
+    footer .logo img {
+        width: 80% !important;
     }
 
     .imgCamp img {
@@ -1034,10 +1058,6 @@ footer p {
         padding: 0;
     }
 
-    .faq p {
-        font-size: 0.9em;
-    }
-
     .quests-column {
         width: 50%;
         margin-right: 1.5vh;
@@ -1045,6 +1065,15 @@ footer p {
 
     #drink {
         width: 30%;
-        margin-bottom: 60vh;
+    }
+
+    .pergunta {
+        font-size: 0.78em;
+    }
+
+    .resposta {
+        font-size: 0.6em;
+        margin: 0;
+        margin-bottom: 2vh;
     }
 }
