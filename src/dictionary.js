@@ -1,5 +1,6 @@
 const dictionary = {
     'en': {
+        'carregando': 'Loading',
         'title-sobre': 'Home',
         'title-camp': 'Campaign',
         'title-social': 'Updates',
@@ -8,15 +9,17 @@ const dictionary = {
         'header-siga': 'Keep up with the news by following us!',
         'header-sobre': 'Sobre o jogo',
         'header-imagens': 'Screenshots',
-        'header-faq': 'Any question? Ask us!',
         'header-freq-faq': 'FAQ',
+        'btn-access-camp': 'Access Campaign',
+        'desenvolvido': 'Developed by ',
+        'contato': 'Contact:'
     },
     'pt-br': {
+        'carregando': 'Carregando',
         'title-sobre': 'Início',
         'title-camp': 'Campanha',
         'title-social': 'Atualizações',
         'title-faq': 'FAQ',
-        'btn-campanha': 'Ajude a Campanha',
         'header-siga': 'Acompanhe as novidades seguindo nossas redes!',
         'header-sobre': 'Sobre o jogo',
         'header-imagens': 'Screenshots',
@@ -27,6 +30,8 @@ const dictionary = {
         'text-sobre-1' : 'Astral Adventure é o um jogo indie brasileiro em desenvolvimento, que mistura SHMUP (ou jogos de nave) com elementos de jogos de plataforma.',
         'text-sobre-2' : 'Desenvolvido pelo time independente Astralsphere Games, o jogo conta com visual pixel art 32 bit, jogabilidade arcade e músicas envolventes!',
         'btn-access-camp': 'Acessar Campanha',
+        'desenvolvido': 'Desenvolvido pela ',
+        'contato': 'Contato:'
     },
 };
 

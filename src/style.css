@@ -66,6 +66,10 @@ p {
     font-size: 1.3em;
 }
 
+i {
+    font-style: normal;
+}
+
 h1{
     font-size: 3em;
     text-transform:uppercase;
