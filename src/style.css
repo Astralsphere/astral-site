@@ -176,7 +176,7 @@ body {
 .loading-points span {
     font-size: 24px;
     margin: 0 5px;
-    animation: dots 3s infinite;
+    animation: dots 2s infinite;
     opacity: 0;
 }
 
