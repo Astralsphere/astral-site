@@ -39,7 +39,9 @@ const translator = new EOTranslator(dictionary);
 
 window.addEventListener('load', () => {
     const ddlLanguage = document.getElementById('ddlLanguage');
-    ddlLanguage.value = document.documentElement.lang || 'en';
+    const userLanguage = navigator.language || navigator.userLanguage;
+    const language = userLanguage.split('-')[0] === 'pt' ? 'pt-br' : 'en';
+    ddlLanguage.value = language;
     ddlLanguage.addEventListener('change', function () {
         const language = ddlLanguage.value;
         translator.translate('inform', { lang: language });
