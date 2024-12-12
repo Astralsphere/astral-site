@@ -40,8 +40,13 @@ const translator = new EOTranslator(dictionary);
 window.addEventListener('load', () => {
     const ddlLanguage = document.getElementById('ddlLanguage');
     const userLanguage = navigator.language || navigator.userLanguage;
-    const language = userLanguage.split('-')[0] === 'pt' ? 'pt-br' : 'en';
-    ddlLanguage.value = language;
+
+    if (userLanguage === 'pt-BR' || userLanguage === 'pt') {
+        ddlLanguage.value = 'pt-br';
+    } else {
+        ddlLanguage.value = 'en';
+    }
+
     ddlLanguage.addEventListener('change', function () {
         const language = ddlLanguage.value;
         translator.translate('inform', { lang: language });
