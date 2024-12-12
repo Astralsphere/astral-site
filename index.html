@@ -25,7 +25,14 @@
     <body>
         <div id="loading">
             <div id="progress-bar"></div>
-            <p eo-translator="carregando"></p>
+            <div class="loadingTxt">
+                <p eo-translator="carregando"></p>
+                <div class="loading-points">
+                    <span class="dot" id="p1">.</span>
+                    <span class="dot" id="p2">.</span>
+                    <span class="dot" id="p3">.</span>
+                </div>
+            </div>
         </div>
         
         <div id="content" class="fade-in">

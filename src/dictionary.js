@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
     const ddlLanguage = document.getElementById('ddlLanguage');
     const userLanguage = navigator.language || navigator.userLanguage;
 
-    if (userLanguage === 'pt-BR' || userLanguage === 'pt') {
+    if (userLanguage === 'pt-br' || userLanguage === 'pt' || userLanguage === 'pt-BR') {
         ddlLanguage.value = 'pt-br';
     } else {
         ddlLanguage.value = 'en';

@@ -164,6 +164,49 @@ body {
     }
 }
 
+.loadingTxt {
+    display: flex;
+    flex-direction: row;
+}
+
+.loading-points {
+    margin-bottom: 10px;
+}
+
+.loading-points span {
+    font-size: 24px;
+    margin: 0 5px;
+    animation: dots 3s infinite;
+    opacity: 0;
+}
+
+#p1 {
+    animation-delay: 0;
+}
+
+#p2 {
+    animation-delay: 1s;
+}
+
+#p3 {
+    animation-delay: 2s;
+}
+
+@keyframes dots {
+    0% {
+        opacity: 0;
+    }
+    33.33% {
+        opacity: 0.5;
+    }
+    66.66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Header + Opções */
 .options {
     display: none;
