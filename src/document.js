@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
           }, 1000);
       }
   }, intervalSpeed);
+  
   const loadingPoints = document.querySelectorAll('.loading-points span');
-
   loadingPoints.forEach((point, index) => {
       point.style.animationDelay = `${index * 1}s`;
       point.addEventListener('animationend', () => {
