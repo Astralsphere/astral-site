@@ -1,216 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.00, maximum-scale=1.50">
-        
-        <meta name="description" content="Astral Adventure é um jogo indie brasileiro em 
-        desenvolvimento pela Astral Sphere Games em colaboração com a P8G, que mistura SHMUP (ou jogos de nave) com elementos de jogos de plataforma.">
-        
-        <meta name="keywords" content="Astral Adventure, Astral Sphere Games, jogo indie, SHMUP,
-        jogos de nave, jogos de plataforma, jogo brasileiro, Plyun">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-        <link rel="stylesheet" href="src/style.css">
-        <link rel="shortcut icon" href="imgs/Plyun/Plyun.ico"/>
-
-        <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script defer src="src/schema.js"></script>
-        <script defer src="src/document.js" type="text/javascript"></script>
-        <script defer src="src/translator.min.js" type="text/javascript"></script>
-        <script defer src="src/dictionary.js" type="text/javascript"></script>
-
-        <title>Astral Adventure</title>
-    </head>
-    <body>
-        <div id="loading">
-            <div id="progress-bar"></div>
-            <div class="loadingTxt">
-                <p eo-translator="carregando"></p>
-                <div class="loading-points">
-                    <span class="dot" id="p1">.</span>
-                    <span class="dot" id="p2">.</span>
-                    <span class="dot" id="p3">.</span>
-                </div>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.00, maximum-scale=1.50">
+    <meta name="description" content="Astral Adventure é um jogo indie brasileiro em desenvolvimento pela Astral Sphere Games, misturando SHMUP com elementos de jogos de plataforma.">
+    <meta name="keywords" content="Astral Adventure, jogo indie, SHMUP, jogos de nave, jogos de plataforma, jogo brasileiro, Plyun">
+    <meta property="og:title" content="Astral Adventure">
+    <meta property="og:description" content="Descubra Astral Adventure, um emocionante jogo indie brasileiro!">
+    <meta property="og:url" content="https://astralsphere.github.io/astral-site/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link data-default-icon="imgs/Plyun/Plyun.ico" sizes="192x192" rel="icon" href="imgs/Plyun/Plyun.ico"/>
+    <link rel="shortcut icon" href="imgs/Plyun/Plyun.ico" sizes="192x192">
+    <title>Astral Adventure</title>
+    
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="src/schema.js"></script>
+    <script defer src="src/document.js"></script>
+    <script defer src="src/translator.min.js"></script>
+    <script defer src="src/dictionary.js"></script>
+</head>
+<body>
+    <div id="loading">
+        <div id="progress-bar"></div>
+        <div class="loadingTxt">
+            <p eo-translator="carregando"></p>
+            <div class="loading-points">
+                <span class="dot" id="p1">.</span>
+                <span class="dot" id="p2">.</span>
+                <span class="dot" id="p3">.</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="content" class="fade-in">
+        <div class="options">
+            <div class="return">
+                <a href="#"> <i class="fa fa-arrow-up" style="margin-top: 1.5vh;"></i> </a>
             </div>
         </div>
         
-        <div id="content" class="fade-in">
-            <div class="options">
-                <div class="return">
-                    <a href="#"> <i class="fa fa-arrow-up" style="margin-top: 1.5vh;"></i> </a>
-                </div>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li><a id="home" href="#inicio" eo-translator="title-sobre">Início</a></li>
+                    <li><a href="#camp" eo-translator="title-camp">Campanha</a></li>
+                    <li><a href="#social" eo-translator="title-social">Social</a></li>
+                    <li><a href="#faq" eo-translator="title-faq">FAQ</a></li>
+                    <li id="language">
+                        <img id="languageFlag" src="imgs/Dictionary/brasil.png" alt="Idioma">
+                        <hr>
+                        <select id="ddlLanguage" onchange="changeFlag()">
+                            <option value="pt-br"> PT-BR </option>
+                            <option value="en"> EN </option>
+                        </select>
+                    </li>
+                </ul>
             </div>
-            
-            <header>
-                <div class="navbar">
-                    <ul>
-                        <li><a id="home" href="#inicio" eo-translator="title-sobre"></a></li>
-                        <li><a href="#camp" eo-translator="title-camp"></a></li>
-                        <li><a href="#social" eo-translator="title-social"></a></li>
-                        <li><a href="#faq" eo-translator="title-faq"></a></li>
-                        <li id="language">
-                            <img id="languageFlag" src="imgs/Dictionary/brasil.png">
-                            <hr>
-                            <select id="ddlLanguage" onchange="changeFlag()">
-                                <option value="pt-br"> PT-BR </option>
-                                <option value="en"> EN </option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-            </header>
+        </header>
 
-            <main>
-                <div class="logo" id="inicio">
-                    <img id="AstralAdventure" src="imgs/Logos/AstralAdventure.png" Title="Astral Adventure!" alt="Astral Adventure!">
-                    <span class="effect"></span>
-                </div>
+        <main>
+            <div class="logo" id="inicio">
+                <img id="AstralAdventure" src="imgs/Logos/AstralAdventure.png" title="Astral Adventure!" alt="Logo do Astral Adventure">
+                <span class ="effect"></span>
+            </div>
 
-                <div class="trailer">
-                    <span class="video">
-                        <span class="essence-column" id="essenleft">
-                            <img id="minileft" src="imgs/Essences/Mini.gif">
-                            <img id="midleft" src="imgs/Essences/Med.gif">
-                            <img id="microleft" src="imgs/Essences/Micro.gif">
-                            <img id="normalleft" src="imgs/Essences/Normal.gif">
-                        </span>
-
-                            <!-- <iframe id="youtube-video" src="https://www.youtube.com/embed/8UI-t1i_kHE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                            Comentando porque deixa o loading do site MUITO lento-->              
-                        
-                        <span class="essence-column" id="essenright">
-                            <img id="normalright" src="imgs/Essences/Normal.gif">
-                            <img id="medright" src="imgs/Essences/Med.gif">
-                            <img id="miniright" src="imgs/Essences/Mini.gif">
-                            <img id="microright" src="imgs/Essences/Micro.gif">
-                        </span>
-                    </span>
-                </div>
-
-                <div class="campanha" id="camp">
-                    <span class="sinopse">
-                        <h1 eo-translator="title-camp">Campanha</h1>
-                        <p eo-translator="text-camp"></p>
+            <div class="trailer">
+                <span class="video">
+                    <span class="essence-column" id="essenleft">
+                        <img id="minileft" src="imgs/Essences/Mini.gif" alt="Essência Mini">
+                        <img id="midleft" src="imgs/Essences/Med.gif" alt="Essência Média">
+                        <img id="microleft" src="imgs/Essences/Micro.gif" alt="Essência Micro">
+                        <img id="normalleft" src="imgs/Essences/Normal.gif" alt="Essência Normal">
                     </span>
 
-                    <span class="btn">
-                        <button id="btnCamp" alt="Acesse a campanha!">
-                            <img class="micred" id="btnmicro-left" src="imgs/Essences/MicroRed.gif">
-                                <p eo-translator="btn-access-camp"></p>
-                            <img class="micred" id="btnmicro-right" src="imgs/Essences/MicroRed.gif">
-                        </button>
+                    <!-- <iframe id="youtube-video" src="https://www.youtube.com/embed/8UI-t1i_kHE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    Comentando porque deixa o loading do site MUITO lento-->  
+
+                    <span class="essence-column" id="essenright">
+                        <img id="normalright" src="imgs/Essences/Normal.gif" alt="Essência Normal">
+                        <img id="medright" src="imgs/Essences/Med.gif" alt="Essência Média">
+                        <img id="miniright" src="imgs/Essences/Mini.gif" alt="Essência Mini">
+                        <img id="microright" src="imgs/Essences/Micro.gif" alt="Essência Micro">
                     </span>
+                </span>
+            </div>
 
-                    <span class="imgCamp">
-                        <img id="AC" src="imgs/Astral/AC.gif" Title="Asteroid City Art" alt="Asteroid City Art">
-                    </span>
+            <div class="campanha" id="camp">
+                <span class="sinopse">
+                    <h1 eo-translator="title-camp">Campanha</h1>
+                    <p eo-translator="text-camp">Descrição da campanha</p>
+                </span>
 
-                    <span class="social" id="social">
-                        <p eo-translator="text-social"></p>
+                <span class="btn">
+                    <button id="btnCamp" alt="Acesse a campanha!">
+                        <img class="micred" id="btnmicro-left" src="imgs/Essences/MicroRed.gif" alt="Botão Micro Red">
+                        <p eo-translator="btn-access-camp">Acesse a Campanha</p>
+                        <img class="micred" id="btnmicro-right" src="imgs/Essences/MicroRed.gif" alt="Botão Micro Red">
+                    </button>
+                </span>
 
-                        <a href="https://www.discord.com" target="_blank" style="margin-top: 7vh;">
-                            <img src="imgs/Buttons/Discord Button.png" alt="Discord">
+                <span class="imgCamp">
+                    <img id="AC" src="imgs/Astral/AC.gif" title="Asteroid City Art" alt="Arte da Asteroid City (Cidade de Asteróides)">
+                </span>
+
+                <span class="social" id="social">
+                    <p eo-translator="text-social">Siga-nos nas redes sociais!</p>
+
+                    <a href="https://www.discord.com" target="_blank" style="margin-top: 7vh;">
+                        <img src="imgs/Buttons/Discord Button.png" alt="Discord">
+                    </a>
+
+                    <span class="redes">
+                        <a href="https://twitter.com/AstralAdvGame" target="_blank" aria-label="Twitter">
+                            <img src="imgs/Buttons/X Button.png" alt="Twitter">
                         </a>
 
-                        <span class="redes">
-                            <a href="https://twitter.com/AstralAdvGame " target="_blank">
-                                <img src="imgs/Buttons/X Button.png" alt="Twitter">
-                            </a>
+                        <a href="https://instagram.com/AstralAdvGame" target="_blank" aria-label="Instagram">
+                            <img src="imgs/Buttons/Instagram Button.png" alt="Instagram">
+                        </a>
 
-                            <a href="https://instagram.com/AstralAdvGame" target="_blank">
-                                <img src="imgs/Buttons/Instagram Button.png" alt="Instagram">
-                            </a>
+                        <a href="https://youtube.com/@AstralAdvGame" target="_blank" aria-label="YouTube">
+                            <img src="imgs/Buttons/YouTube Button.png" alt="YouTube">
+                        </a>
 
-                            <a href="https://youtube.com/@AstralAdvGame" target="_blank">
-                                <img src="imgs/Buttons/YouTube Button.png" alt="Youtube">
-                            </a>
+                        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                            <img src="imgs/Buttons/TikTok Button.png" alt="TikTok">
+                        </a>
 
-                            <a href="https://www.tiktok.com" target="_blank">
-                                <img src="imgs/Buttons/TikTok Button.png" alt="TikTok">
-                            </a>
-
-                            <a href="https://facebook.com/AstralAdvGame" target="_blank">
-                                <img src="imgs/Buttons/Facebook Button.png" alt="Facebook">
-                            </a>
-                            <img src="imgs/Plyun/PlyunDash.png" id="dash" alt="Plyun!">
-                        </span>
+                        <a href="https://facebook.com/AstralAdvGame" target="_blank" aria-label="Facebook">
+                            <img src="imgs/Buttons/Facebook Button.png" alt="Facebook">
+                        </a>
+                        <img src="imgs/Plyun/PlyunDash.png" id="dash" alt="Plyun!">
                     </span>
-                </div>
+                </span>
+            </div>
 
-                <div class="sobre">
-                    <span class="jogo">
-                        <img id="Plyun" src="imgs/Astral/astral.png" title="Plyun" alt="Plyun!">
+            <div class="sobre">
+                <span class="jogo">
+                    <img id="Plyun" src="imgs/Astral/astral.png" title="Plyun" alt="Plyun!">
+                </span>
+                <span class="jogoTxt">
+                    <h1 eo-translator="header-sobre">Sobre o Jogo</h1><br>
+                    <p eo-translator="text-sobre-1">Descrição do jogo</p>
+                    <br>
+                    <p eo-translator="text-sobre-2">Mais informações sobre o jogo.</p>
+                    <br>
+                </span>
+            </div>
+
+            <div class="screenshots">
+                <span class="fotos-column">
+                    <h1>Screenshots</h1>
+                    <span class="fotos-row">
+                        <span class="print"><img src="imgs/Prints/print1.jpg" alt="Screenshot 1"></span>
+                        <span class="print"><img src="imgs/Prints/print2.jpg" alt="Screenshot 2"></span>
+                        <span class="print"><img src="imgs/Prints/print3.jpg" alt="Screenshot 3"></span>
                     </span>
-                    <span class="jogoTxt">
-                        <h1 eo-translator="header-sobre"></h1><br>
-                        <p eo-translator="text-sobre-1"></p>
-                        <br>
 
-                        <p eo-translator="text-sobre-2"></p>
-                        <br>
+                    <span class="fotos-row">
+                        <span class="print"><img src="imgs/Prints/print1.jpg" alt="Screenshot 1"></span>
+                        <span class="print"><img src="imgs/Prints/print2.jpg" alt="Screenshot 2"></span>
+                        <span class="print"><img src="imgs/Prints/print3.jpg" alt="Screenshot 3"></span>
                     </span>
-                </div>
+                </span>
+            </div>
 
-                <div class="screenshots">
-                    <span class="fotos-column">
-                        <h1>Screenshots</h1>
-                        <span class="fotos-row">
-                            <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
-                            <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
-                            <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
-                        </span>
+            <div class="faq" id="faq">
+                <h1 eo-translator="header-freq-faq">Perguntas Frequentes</h1>
+                <span class="quests-row">
+                    <img src="imgs/Plyun/PlyunDrink.png" id="drink" alt="Plyun!">
+                    <span class="quests-column">
+                        <p class="pergunta" onclick="toggleResposta('resposta1')"><a eo-translator="p1">Pergunta 1</a></p>
+                        <p class="resposta" id="resposta1" eo-translator="r1">Resposta 1</p>
 
-                        <span class="fotos-row">
-                            <span class="print"><img src="imgs/Prints/print1.jpg"></span></li>
-                            <span class="print"><img src="imgs/Prints/print2.jpg"></span></li>
-                            <span class="print"><img src="imgs/Prints/print3.jpg"></span></li>
-                        </span>
+                        <p class="pergunta" onclick="toggleResposta('resposta2')"><a eo-translator="p2">Pergunta 2</a></p>
+                        <p class="resposta" id="resposta2" eo-translator="r2">Resposta 2</p>
+
+                        <p class="pergunta" onclick="toggleResposta('resposta3')"><a eo-translator="p3">Pergunta 3</a></p>
+                        <p class="resposta" id="resposta3" eo-translator="r3">Resposta 3</p>
                     </span>
-                </div>
 
-                <div class="faq" id="faq">
-                    <h1 eo-translator="header-freq-faq"></h1>
-                    <span class="quests-row">
-                        <img src="imgs/Plyun/PlyunDrink.png" id="drink" alt="Plyun!">
-                        <span class="quests-column">
-                            <p class="pergunta" onclick="toggleResposta('resposta1')"><a eo-translator="p1"></a></p>
-                            <p class="resposta" id="resposta1" eo-translator="r1"></p>
+                    <span class="quests-column">
+                        <p class="pergunta" onclick="toggleResposta('resposta4')"><a eo-translator="p4">Pergunta 4</a></p>
+                        <p class="resposta" id="resposta4" eo-translator="r4">Resposta 4</p>
 
-                            <p class="pergunta" onclick="toggleResposta('resposta2')"><a eo-translator="p2"></a></p>
-                            <p class="resposta" id="resposta2" eo-translator="r2"></p>
+                        <p class="pergunta" onclick="toggleResposta('resposta5')"><a eo-translator="p5">Pergunta 5</a></p>
+                        <p class="resposta" id="resposta5" eo-translator="r5">Resposta 5</p>
 
-                            <p class="pergunta" onclick="toggleResposta('resposta3')"><a eo-translator="p3"></a></p>
-                            <p class="resposta" id="resposta3" eo-translator="r3"></p>
-                        </span>
-
-                        <span class="quests-column">
-                            <p class="pergunta" onclick="toggleResposta('resposta4')"><a eo-translator="p4"></a></p>
-                            <p class="resposta" id="resposta4" eo-translator="r4"></p>
-
-                            <p class="pergunta" onclick="toggleResposta('resposta5')"><a eo-translator="p5"></a></p>
-                            <p class="resposta" id="resposta5" eo-translator="r5"></p>
-
-                            <p class="pergunta" onclick="toggleResposta('resposta6')"><a eo-translator="p6"></a></p>
-                            <p class="resposta" id="resposta6" eo-translator="r6"></p>
-                        </span>
+                        <p class="pergunta" onclick="toggleResposta('resposta6')"><a eo-translator="p6">Pergunta 6</a></p>
+                        <p class="resposta" id="resposta6" eo-translator="r6">Resposta 6</p>
                     </span>
-                </div>
-            </main>
-            <footer>
-                <img src="imgs/Plyun/BoomBox.png" id="box" alt="Boom Box!">    
-                <img src="imgs/Plyun/PlyunMusic.png" id="music" alt="Plyun!">
-                <div class="logo">
-                    <img src="imgs/Logos/AstralSphere.png" Title="Astral Sphere Games" alt="Astral Sphere Games">
-                </div>
-                <p>© Astral Adventure. <i eo-translator="desenvolvido"></i>Astral Sphere Games.</p>
-                <hr>
-                <div class="contato">
-                    <a href="mailto:astralspheregames@gmail.com">
-                        <p><i eo-translator="contato"></i> astralspheregames@gmail.com</p>
-                    </a>
-                </div>
-            </footer>
-        </div>
-    </body>
+                </span>
+            </div>
+        </main>
+        <footer>
+            <img src="imgs/Plyun/BoomBox.png" id="box" alt="Boom Box!">    
+            <img src="imgs/Plyun/PlyunMusic.png" id="music" alt="Plyun!">
+            <div class="logo">
+                <img src="imgs/Logos/AstralSphere.png" title="Astral Sphere Games" alt="Astral Sphere Games">
+            </div>
+            <p>© Astral Adventure. <i eo-translator="desenvolvido"></i>Astral Sphere Games.</p>
+            <hr>
+            <div class="contato">
+                <a href="mailto:astralspheregames@gmail.com">
+                    <p><i eo-translator="contato"></i> astralspheregames@gmail.com</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
